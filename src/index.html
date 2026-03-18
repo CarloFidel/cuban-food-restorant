@@ -1,15 +1,127 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuban food & music</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="favicon.ico" />
+    <title>La Isla Viva | Cocina cubana</title>
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header><include src="./header.html"></include></header>
-    <main></main>
-    <footer><include src="./footer.html"></include></footer>
+    <header>
+      <include src="src/header.html"></include>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <p>Sabor, ritmo y tradicion</p>
+        <h1>Un viaje a La Habana en cada plato</h1>
+        <p>
+          Descubre una carta llena de recetas tradicionales, cocteles tropicales y
+          musica en vivo para convertir cualquier cena en una celebracion.
+        </p>
+        <p>
+          <a href="#menu">Ver menu</a>
+          <a href="#destacados">Conocer la experiencia</a>
+        </p>
+      </section>
+
+      <section id="destacados">
+        <h2>Una experiencia cubana completa</h2>
+
+        <article>
+          <h3>Recetas de familia</h3>
+          <p>
+            Platos cocinados lento, con sofritos caseros y sabores que evocan al
+            malecon de La Habana.
+          </p>
+        </article>
+
+        <article>
+          <h3>Barra tropical</h3>
+          <p>
+            Mojitos, daiquiris y cafe cubano preparados al momento con frutas
+            frescas y ron premium.
+          </p>
+        </article>
+
+        <article>
+          <h3>Ritmo en directo</h3>
+          <p>
+            Sesiones de son, salsa y bolero para que cada visita se viva como una
+            fiesta caribena.
+          </p>
+        </article>
+      </section>
+
+      <section id="menu">
+        <h2>Lo mas pedido de la casa</h2>
+
+        <article>
+          <h3>Tostones rellenos</h3>
+          <p>
+            Platano verde crujiente con ropa vieja deshilachada y cebolla
+            encurtida.
+          </p>
+          <p>8,50 EUR</p>
+        </article>
+
+        <article>
+          <h3>Lechon asado lento</h3>
+          <p>
+            Cerdo marinado 24 horas con mojo citrico, arroz congris y yuca al ajo.
+          </p>
+          <p>17,00 EUR</p>
+        </article>
+
+        <article>
+          <h3>Flan de coco</h3>
+          <p>
+            Textura cremosa con caramelo oscuro, ralladura de lima y crumble de
+            canela.
+          </p>
+          <p>6,00 EUR</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="vibe-title">
+        <h2 id="vibe-title">Cena, son cubano y una barra tropical</h2>
+        <p>
+          Desde el primer brindis hasta el ultimo acorde, el espacio combina luz
+          calida, colores vivos y una atencion cercana para una noche inolvidable.
+        </p>
+
+        <ul aria-label="Indicadores del restaurante">
+          <li>4.8/5 valoracion media de clientes</li>
+          <li>120+ reservas cada fin de semana</li>
+          <li>15 cocteles preparados al momento</li>
+        </ul>
+      </section>
+
+      <section id="reserva">
+        <h2>Tu noche cubana empieza aqui</h2>
+        <p>
+          Completa el formulario y te confirmamos disponibilidad en menos de una
+          hora durante horario de atencion.
+        </p>
+
+        <form action="#" method="post">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre" />
+
+          <label for="phone">Telefono</label>
+          <input id="phone" name="phone" type="tel" placeholder="600 000 000" />
+
+          <label for="date">Fecha</label>
+          <input id="date" name="date" type="date" />
+
+          <button type="submit">Confirmar reserva</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contacto">
+      <include src="src/footer.html"></include>
+    </footer>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

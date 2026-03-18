@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "browserslist": "since 2016-03, not dead, > 0.2%",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
