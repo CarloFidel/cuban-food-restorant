@@ -1,0 +1,7 @@
+body{
+    background-image: linear-gradient( to bottom, var(--bg-mint), var(--bg-cream));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}

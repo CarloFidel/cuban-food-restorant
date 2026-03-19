@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: auto;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 10px;
+  z-index: 10;
+
+  color: #f4f2e6;
+
+  & .desktop {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+    & nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+  }
+  & .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    width: 100%;
+    position: static;
+    justify-content: space-between;
+
+    & .desktop {
+      display: flex;
+    }
+    & .mobile {
+      display: none;
+    }
+  }
+}

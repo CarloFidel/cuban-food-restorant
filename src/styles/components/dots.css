@@ -1,0 +1,9 @@
+.dots{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid var(--ink-soft);
+    background-color: var(--bg-sand);
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}

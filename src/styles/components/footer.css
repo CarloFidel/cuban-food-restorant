@@ -1,0 +1,78 @@
+footer {
+  width: 100%;
+  padding: var(--padding-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--margin-base);
+  margin-bottom: var(--margin-base);
+
+  & .reserva {
+    & h2 {
+      color: var(--ink);
+      margin-bottom: var(--margin-base);
+      text-align: center;
+
+      & + * {
+        margin-top: var(--margin-base);
+        margin-bottom: var(--margin-base);
+      }
+    }
+  }
+
+  & p {
+    text-align: center;
+    color: var(--ink);
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-base);
+    width: 100%;
+    max-width: 400px;
+
+    & a {
+      margin: var(--margin-base) var(--margin-base);
+      width: 90%;
+    }
+    & label {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 90%;
+      color: var(--ink);
+    }
+  }
+  & .redes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-lg);
+    margin-top: var(--margin-base);
+  }
+
+  & .contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & a{
+        text-decoration: underline;
+    }
+  }
+
+  & .clock, .date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-md);
+    margin-top: var(--margin-base);
+  }
+}

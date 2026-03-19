@@ -1,20 +1,27 @@
-<p>Abierto hoy de 13:00 a 23:30 | Musica en vivo cada viernes</p>
+<section class="header">
+  <div class="header-container desktop ">
+    <a href="/src/index.html" aria-label="Inicio La Isla Viva">
+      <span>La Isla Viva</span>
+      <span>cocina cubana autentica</span>
+    </a>
 
-<div>
-	<a href="#inicio" aria-label="Inicio La Isla Viva">
-		<span>La Isla Viva</span>
-		<span>cocina cubana autentica</span>
-	</a>
+    <nav aria-label="Navegacion principal">
+      <ul>
+        <li><a href="/src/index.html">Inicio</a></li>
+        <li><a href="/src/index.html">Destacados</a></li>
+        <li><a href="/src/index.html">Menu</a></li>
+        <li><a href="/src/index.html">Reserva</a></li>
+        <li><a href="/src/index.html">Contacto</a></li>
+      </ul>
+    </nav>
 
-	<nav aria-label="Navegacion principal">
-		<ul>
-			<li><a href="#inicio">Inicio</a></li>
-			<li><a href="#destacados">Destacados</a></li>
-			<li><a href="#menu">Menu</a></li>
-			<li><a href="#reserva">Reserva</a></li>
-			<li><a href="#contacto">Contacto</a></li>
-		</ul>
-	</nav>
-
-	<a href="#reserva">Reservar mesa</a>
-</div>
+    <a class="primary-button" href="#reserva">Reservar mesa</a>
+  </div>
+  <div class="header-container mobile">
+    <a class="menu-toggle" aria-label="Abrir menú de navegación">
+      <svg class="menu-toggle__icon" width="24" height="24" >
+         <use href="./assets/sprite.svg#hamburger" />
+      </svg>
+    </a>
+  </div>
+</section>

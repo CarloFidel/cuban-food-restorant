@@ -1,0 +1,23 @@
+.secondary-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--accent-green);
+    color: var(--ink-light);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: var(--accent-green-dark);
+}
+
+.secondary-button:active {
+    background-color: var(--accent-green-dark);
+    transform: scale(0.98);
+}
+

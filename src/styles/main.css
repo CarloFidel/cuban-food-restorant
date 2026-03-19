@@ -1,0 +1,14 @@
+@import './abstract/reset.css';
+@import './abstract/variables.css';
+@import './base/typography.css';
+@import './components/header.css';
+@import './components/carousel.css';
+@import './components/primary_button.css';
+@import './components/secondary_button.css';
+@import './components/dots.css';
+@import './components/input.css';
+@import './components/footer.css';
+@import './layout/body.css';
+@import './layout/main.css';
+@import './pages/index.css';
+

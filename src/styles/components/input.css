@@ -1,0 +1,19 @@
+input {
+  padding: var(--padding-md);
+  border: 1px solid var(--bg-cream);
+  border-radius: var(--radius-md);
+  width: 90%;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  color: var(--ink);
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px 0.5px var(--accent-green);
+  }
+
+  & [type="date"] {
+    padding: var(--padding-md);
+  }
+}
