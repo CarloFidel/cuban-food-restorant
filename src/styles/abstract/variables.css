@@ -1,4 +1,4 @@
-:root{
+:root {
   --bg-cream: #fff8e6;
   --bg-sand: #ffe9bf;
   --bg-mint: #d8f2df;
@@ -9,10 +9,17 @@
   --ink-light: #f5e8c7;
 
   --accent-red: #c43a2f;
-  --accent-yellow: #e6b96c;
+
   --accent-green: #1f7659;
   --accent-green-dark: #16573f;
   --accent-green-light: #4caf7c;
+  --accent-green-extralight: #76a5942b;
+
+  --accent-yellow: #e6b96c;
+  --accent-yellow-dark: #c48e4a;
+  --accent-yellow-light: #f5d9a3;
+  --accent-yellow-extralight: #fbe8c9c8;
+
   --accent-wine: #a1404f;
   --accent-wine-pressed: #6e2b3c;
 
@@ -20,13 +27,13 @@
 
   --border-soft: #d9bb8b;
   --border-dark: #5d4a33;
-  
+
   --shadow: 0 6px 8px 1px rgba(13, 53, 22, 0.662);
   --shadow-pressed: 0 6px 8px 1px rgba(13, 53, 22, 0.262);
+
+  --radius-base: 8px;
   --radius-lg: 26px;
   --radius-md: 16px;
-  --font-display: "Bebas Neue", Impact, sans-serif;
-  --font-body: "Barlow", "Segoe UI", sans-serif;
 
   --margin-base: 10px;
   --margin-md: 10px;
@@ -40,8 +47,9 @@
   --gap-md: 10px;
   --gap-lg: 20px;
 
+  --w-prmy-btn-mobile-base: 80px;
+  --w-prmy-btn-mobile-md: 120px;
+  --w-prmy-btn-mobile-lg: 150px;
 
-  --width-primary-button-mobile: 150px;
-  --width-primary-button-desktop: 200px;
-
+  --w-prmy-btn-desktop: 200px;
 }

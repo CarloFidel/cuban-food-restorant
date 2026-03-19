@@ -5,7 +5,12 @@
   justify-items: center;
   align-items: center;
   position: relative;
-  background-image: radial-gradient( circle at 50% 50%, var(--bg-cream), var(--bg-mint));
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    var(--bg-cream),
+    var(--bg-mint)
+  );
+  margin-bottom: var(--margin-base);
 
   & h1 {
     padding: 0px var(--padding-base);
@@ -34,7 +39,6 @@
   & article {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -54,7 +58,7 @@
       );
     }
   }
-  
+
   & .dots-container {
     display: flex;
     justify-content: center;
@@ -79,4 +83,77 @@
   }
 }
 
+.section-categorias {
+  width: 100%;
+  display: flex;
+  gap: var(--gap-base);
+  align-items: center;
+  justify-content: flex-start;
+  margin: var(--margin-base) var(--margin-base);
+  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 
+  & svg {
+    position: absolute;
+    left: 85%;
+    bottom: 41%;
+    z-index: 10;
+    animation: arrow-move-right 2s infinite;
+    pointer-events: none;
+  }
+
+  & article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-base);
+    flex: 0 0 auto;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid var(--accent-green-extralight);
+    border-radius: var(--radius-md);
+    padding: var(--padding-base);
+    scroll-snap-align: start;
+
+    & h3 {
+      margin-top: var(--margin-base);
+      color: var(--ink-soft);
+      text-align: center;
+    }
+
+    & p {
+      width: 60%;
+      text-align: center;
+      color: var(--ink-soft);
+    }
+
+    & a {
+      width: 98%;
+    }
+
+    & img {
+      width: 100%;
+      min-width: 390px;
+      height: auto;
+      border-radius: var(--radius-md);
+      object-fit: cover;
+      filter: contrast(80%) brightness(90%);
+      box-shadow: var(--shadow);
+    }
+  }
+}
+
+@keyframes arrow-move-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

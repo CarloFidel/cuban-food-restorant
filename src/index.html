@@ -14,9 +14,9 @@
     <main>
       <section class="section-hero" id="sectionHero">
         <article class="carousel">
-          <img src="/src/assets/ropa_vieja.png" alt="Plato de comida cubana" />
-          <img src="/src/assets/ropa_vieja_02.png" alt="Coctel tropical" />
-          <img src="/src/assets/quintet.png" alt="Musicos tocando son cubano" />
+          <img src="/src/public/ropa_vieja.png" alt="Plato de comida cubana" />
+          <img src="/src/public/ropa_vieja_02.png" alt="Coctel tropical" />
+          <img src="/src/public/quintet.png" alt="Musicos tocando son cubano" />
         </article>
         <div class="dots-container">
           <div class="dots"></div>
@@ -32,59 +32,54 @@
         </p>
         <div class="button-container">
           <a class="primary-button" href="#menu">Ver la carta</a>
-          <a class="secondary-button" href="#destacados"> Experiencia</a>
         </div>
       </section>
 
-      <section id="destacados">
-        <h2>Una experiencia cubana completa</h2>
+      <section class="section-categorias">
+        <svg width="35" height="35">
+          <use href="./assets/sprite.svg#arrow-right" />
+        </svg>
 
         <article>
-          <h3>Recetas de familia</h3>
-          <p>
-            Platos cocinados lento, con sofritos caseros y sabores que evocan al
-            malecon de La Habana.
-          </p>
+          <img src="public/mojito.png" alt="imagen de mojito" />
+          <h3>Nuestros cocteles</h3>
+          <p>Bebidas tropicales que evocan el frescor del caribe</p>
+          <a class="secondary-button" href="/src/pages/menu_bebidas.html"
+            >Carta de bebidas</a
+          >
         </article>
-
         <article>
-          <h3>Barra tropical</h3>
-          <p>
-            Mojitos, daiquiris y cafe cubano preparados al momento con frutas
-            frescas y ron premium.
-          </p>
+          <img src="public/plato-frituritas.png" alt="imagen de frituritas" />
+          <h3>Comida tradicional</h3>
+          <p>Bocados crujientes que capturan la esencia de la cocina cubana</p>
+          <a class="secondary-button" href="/src/pages/menu.html"
+            >Visita nuestra carta</a
+          >
         </article>
-
         <article>
-          <h3>Ritmo en directo</h3>
-          <p>
-            Sesiones de son, salsa y bolero para que cada visita se viva como
-            una fiesta caribena.
-          </p>
+          <img src="public/quintet.png" alt="imagen de quinteto" />
+          <h3>Música tradicional</h3>
+          <p>Música en vivo que llena de ritmo y alegría nuestro local</p>
+          <a class="secondary-button" href="/src/pages/menu_musica.html"
+            >Programación musical</a
+          >
         </article>
       </section>
 
-      <section class="section-opinions">
-        <div class="slider-opinion-container">
-          <div class="container">
-            <div class="opinion-card"></div>
-          </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="vibe-title">
-        <h2 id="vibe-title">Cena, son cubano y una barra tropical</h2>
-        <p>
-          Desde el primer brindis hasta el ultimo acorde, el espacio combina luz
-          calida, colores vivos y una atencion cercana para una noche
-          inolvidable.
-        </p>
-
-        <ul aria-label="Indicadores del restaurante">
-          <li>4.8/5 valoracion media de clientes</li>
-          <li>120+ reservas cada fin de semana</li>
-          <li>15 cocteles preparados al momento</li>
-        </ul>
+      <section class="section-sugerencias">
+        <h2>Sugerencias de la semana</h2>
+        <article class="card-sugerencia">
+          <img
+            src="/src/public/plato-frituritas.png"
+            alt="Plato de frituritas cubanas"
+          />
+          <h3>Frituritas cubanas</h3>
+          <p class="sugerencia-description">
+            Crujientes por fuera, suaves por dentro. Nuestras frituritas de
+            malanga son el bocado perfecto para compartir y disfrutar del
+            auténtico sabor cubano.
+          </p>
+        </article>
       </section>
     </main>
 
