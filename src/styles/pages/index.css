@@ -1,3 +1,16 @@
+header {
+  position: relative;
+
+  & .hamburger-container {
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    cursor: pointer;
+  }
+}
+
 .section-hero {
   width: 100%;
   display: flex;
@@ -75,72 +88,6 @@
   }
 }
 
-.section-menu {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--bg-dark);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  backdrop-filter: blur(2px);
-
-  & svg {
-    position: absolute;
-    top: var(--margin-lg);
-    right: var(--margin-lg);
-    cursor: pointer;
-    color: var(--ink-bright);
-  }
-
-  & nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    & ul {
-      display: flex;
-      flex-direction: column;
-      justify-items: center;
-      align-items: flex-start;
-      gap: var(--gap-lg);
-      margin: calc(var(--padding-lg) * 10) auto;
-
-      & li {
-        display: flex;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 32px;
-        color: var(--ink-bright);
-        cursor: pointer;
-        transition: color 0.3s ease;
-        border-bottom: 3px solid var(--ink-bright);
-        list-style: none;
-        width: 70vw;
-        padding: var(--padding-lg);
-        cursor: pointer;
-
-        &:hover {
-          color: var(--ink);
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .section-hero {
-    & article {
-      border-radius: var(--radius-lg);
-    }
-  }
-}
-
 .section-categorias {
   width: 100%;
   display: flex;
@@ -201,18 +148,6 @@
       filter: contrast(80%) brightness(90%);
       box-shadow: var(--shadow);
     }
-  }
-}
-
-@keyframes arrow-move-right {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(10px);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 
@@ -295,5 +230,33 @@
         filter: contrast(60%) brightness(80%);
       }
     }
+  }
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+
+@keyframes arrow-move-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .section-hero {
+    & article {
+      border-radius: var(--radius-lg);
+    }
+  }
+  .hamburger-container {
+    display: none;
   }
 }

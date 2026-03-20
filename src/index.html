@@ -8,10 +8,16 @@
   </head>
   <body>
     <header>
-      <include src="src/header.html"></include>
-      <section class="hiden section-menu">
-        <svg width="35" height="35">
-          <use href="./assets/sprite.svg#close" />
+      <include class="hidden" src="src/header.html"></include>
+      <div id="openMenuIcon" class="hamburger-container mobile">
+          <svg class="menu-toggle__icon" width="24" height="24">
+            <use href="/src/assets/sprite.svg#hamburger" />
+          </svg>
+      </div>
+
+      <section id="dark-curtain" class="hidden section-menu">
+        <svg id="closeMenuIcon" width="25" height="25">
+          <use href="/src/assets/sprite.svg#close" />
         </svg>
         <nav>
           <ul>
@@ -44,7 +50,7 @@
           celebracion.
         </p>
         <div class="button-container">
-          <a class="primary-button" href="#menu">Ver la carta</a>
+          <a class="primary-button" href="/src/pages/menu.html">Ver la carta</a>
         </div>
       </section>
 
@@ -78,12 +84,6 @@
           >
         </article>
       </section>
-
-      <div class="div-decoration-categorias">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
 
       <section class="section-sugerencias">
         <h2>El chef sugiere</h2>

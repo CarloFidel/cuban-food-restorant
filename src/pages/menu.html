@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <include class="hidden" src="src/header.html"></include>
+      <div id="openMenuIcon" class="hamburger-container mobile">
+        <svg class="menu-toggle__icon" width="24" height="24">
+          <use href="/src/assets/sprite.svg#hamburger" />
+        </svg>
+      </div>
+
+      <section id="dark-curtain" class="hidden section-menu">
+        <svg id="closeMenuIcon" width="25" height="25">
+          <use href="/src/assets/sprite.svg#close" />
+        </svg>
+        <nav>
+          <ul>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Menu 2</a></li>
+            <li><a href="">Menu 3</a></li>
+            <li><a href="">Menu 4</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main></main>
+    <footer id="contacto">
+      <include src="src/footer.html"></include>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
