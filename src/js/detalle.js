@@ -1,16 +1,46 @@
-export function createDetalleContent(data){
-    const titulo = data.titulo;
-    const descripcion = data.descripcion;
-    const precio = data.precio;
-    const imagen = data.imagen;
+import ingredientesData from "/src/assets/ingredientes.json";
 
-    const detalleImg = document.getElementById('detalle-img');
-    const detalleTitulo = document.getElementById('detalle-titulo');
-    const detallePrecio = document.getElementById('detalle-precio');
-    const detalleDescripcion = document.getElementById('detalle-descripcion');
+export function createDetalleContent(data) {
 
-    detalleImg.src = imagen;
-    detalleTitulo.textContent = titulo;
-    detallePrecio.textContent = precio;
-    detalleDescripcion.textContent = descripcion;
+  const titulo = data.titulo;
+  const descripcion = data.descripcion;
+  const precio = data.precio;
+  const imagen = data.imagen;
+
+  const platos = ingredientesData.oferta;
+
+  const detalleImg = document.getElementById("detalle-img");
+  const detalleTitulo = document.getElementById("detalle-titulo");
+  const detallePrecio = document.getElementById("detalle-precio");
+  const detalleDescripcion = document.getElementById("detalle-descripcion");
+  const detalleIngredientes = document.getElementById("detalle-ingredientes");
+
+  if (
+    !detalleImg ||
+    !detalleTitulo ||
+    !detallePrecio ||
+    !detalleDescripcion ||
+    !detalleIngredientes
+  ) {
+    console.error("No se encontraron los elementos del detalle en el DOM.");
+    return;
+  }
+
+
+  detalleImg.src = imagen;
+  detalleTitulo.textContent = titulo;
+  detallePrecio.textContent = precio;
+  detalleDescripcion.textContent = descripcion;
+
+  const platoFilter = platos.find((plato) => plato.nombre === titulo);
+  if (platoFilter) {
+    const ingredientes = platoFilter.ingredientes;
+    const ingrMayus = ingredientes.map(
+      (ingrediente) =>
+        ingrediente.charAt(0).toUpperCase() + ingrediente.slice(1),
+    );
+    detalleIngredientes.innerHTML = ingrMayus
+      .map((ingrediente) => `<p>${ingrediente}</p>`)
+      .join("");
+  }
 }

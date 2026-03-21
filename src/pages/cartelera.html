@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartelera Musical</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <include class="hidden" src="src/header.html"></include>
+      <include src="src/sideMenu.html"></include>
+    </header>
+
+    <main>
+      <section class="section-hero-cartelera" id="sectionHeroCartelera">
+        <img
+          src="/src/public/quintet.png"
+          alt="Quinteto tocando música cubana"
+        />
+        <h1>Cartelera en Vivo</h1>
+        <p>De jueves a domingo, una noche distinta con sabor y son cubano.</p>
+      </section>
+
+      <section class="section-cartelera" id="sectionCartelera">
+        <h2>Programación semanal</h2>
+          <article>
+            <div class="card-plato">
+              <img src="/src/public/quintet.png" alt="Grupo Habana Son" />
+              <p class="plato-precio">Jueves | 21:00</p>
+            </div>
+            <div class="plato-descripcion">
+              <h3>Habana Son</h3>
+              <p>
+                Conjunto nacido en Centro Habana que mezcla son tradicional,
+                bolero y guaracha. Sus integrantes llevan mas de una decada en
+                escenarios de peñas y festivales locales, con un repertorio que
+                rescata clasicos cubanos para nuevas generaciones.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <div class="card-plato">
+              <img
+                src="/src/public/quintet.png"
+                alt="Grupo Clave del Malecón"
+              />
+              <p class="plato-precio">Viernes | 21:30</p>
+            </div>
+            <div class="plato-descripcion">
+              <h3>Clave del Malecón</h3>
+              <p>
+                Proyecto musical formado por instrumentistas de jazz latino y
+                timba suave. Su estilo combina percusion afrocubana, piano
+                melodico y voces armonizadas, creando un sonido elegante para
+                noches de cena y baile.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <div class="card-plato">
+              <img src="/src/public/quintet.png" alt="Grupo Brisa Caribe" />
+              <p class="plato-precio">Sábado | 22:00</p>
+            </div>
+            <div class="plato-descripcion">
+              <h3>Brisa Caribe</h3>
+              <p>
+                Banda de trayectoria regional con influencias de salsa clasica,
+                cha cha cha y musica popular bailable. Han participado en ciclos
+                culturales gastronomicos, destacando por su energia en vivo y su
+                cercania con el publico.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <div class="card-plato">
+              <img src="/src/public/quintet.png" alt="Grupo Raíces del Son" />
+              <p class="plato-precio">Domingo | 20:30</p>
+            </div>
+            <div class="plato-descripcion">
+              <h3>Raíces del Son</h3>
+              <p>
+                Agrupacion dedicada a preservar el son montuno y la trova
+                tradicional. Sus musicos, con formacion academica y callejera,
+                ofrecen un repertorio historico comentado que conecta memoria,
+                ritmo y cultura cubana.
+              </p>
+            </div>
+          </article>
+      </section>
+    </main>
+
+    <footer id="contacto">
+      <include src="src/footer.html"></include>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

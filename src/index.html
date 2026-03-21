@@ -9,25 +9,7 @@
   <body>
     <header>
       <include class="hidden" src="src/header.html"></include>
-      <div id="openMenuIcon" class="hamburger-container mobile">
-          <svg class="menu-toggle__icon" width="24" height="24">
-            <use href="/src/assets/sprite.svg#hamburger" />
-          </svg>
-      </div>
-
-      <section id="dark-curtain" class="hidden section-menu">
-        <svg id="closeMenuIcon" width="25" height="25">
-          <use href="/src/assets/sprite.svg#close" />
-        </svg>
-        <nav>
-          <ul>
-            <li><a href="">Menu</a></li>
-            <li><a href="">Menu 2</a></li>
-            <li><a href="">Menu 3</a></li>
-            <li><a href="">Menu 4</a></li>
-          </ul>
-        </nav>
-      </section>
+      <include  src="src/sideMenu.html"></include>
     </header>
 
     <main>
@@ -79,7 +61,7 @@
           <img src="public/quintet.png" alt="imagen de quinteto" />
           <h3>Música tradicional</h3>
           <p>Música en vivo que llena de ritmo y alegría nuestro local</p>
-          <a class="secondary-button" href="/src/pages/menu_musica.html"
+          <a class="secondary-button" href="/src/pages/cartelera.html"
             >Programación musical</a
           >
         </article>

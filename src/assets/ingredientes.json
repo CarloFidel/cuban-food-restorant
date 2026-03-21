@@ -1,0 +1,237 @@
+{
+    "oferta": [
+        {
+            "nombre": "Ropa Vieja",
+            "ingredientes": [
+                "falda de res",
+                "cebolla",
+                "pimiento rojo",
+                "ajo",
+                "tomate triturado",
+                "comino",
+                "laurel",
+                "aceite de oliva",
+                "sal",
+                "pimienta"
+            ]
+        },
+        {
+            "nombre": "Lechón Asado",
+            "ingredientes": [
+                "cerdo",
+                "ajo",
+                "naranja agria",
+                "orégano",
+                "comino",
+                "sal",
+                "pimienta",
+                "cebolla"
+            ]
+        },
+        {
+            "nombre": "Vaca Frita",
+            "ingredientes": [
+                "falda de res",
+                "cebolla",
+                "ajo",
+                "limón",
+                "aceite",
+                "sal",
+                "pimienta",
+                "comino"
+            ]
+        },
+        {
+            "nombre": "Arroz Congrí",
+            "ingredientes": [
+                "arroz",
+                "frijoles negros",
+                "cebolla",
+                "pimiento verde",
+                "ajo",
+                "comino",
+                "hoja de laurel",
+                "aceite",
+                "sal"
+            ]
+        },
+        {
+            "nombre": "Ajiaco Criollo",
+            "ingredientes": [
+                "maíz tierno",
+                "yuca",
+                "calabaza",
+                "malanga",
+                "carne de cerdo",
+                "carne de res",
+                "ajo",
+                "cebolla",
+                "cilantro",
+                "sal"
+            ]
+        },
+        {
+            "nombre": "Picadillo Habanero",
+            "ingredientes": [
+                "carne molida de res",
+                "cebolla",
+                "ajo",
+                "tomate",
+                "aceitunas",
+                "pasas",
+                "comino",
+                "vino seco",
+                "sal",
+                "pimienta"
+            ]
+        },
+        {
+            "nombre": "Fricasé de Pollo",
+            "ingredientes": [
+                "pollo troceado",
+                "cebolla",
+                "ajo",
+                "tomate",
+                "vino blanco",
+                "papas",
+                "laurel",
+                "sal",
+                "pimienta"
+            ]
+        },
+        {
+            "nombre": "Yuca con Mojo",
+            "ingredientes": [
+                "yuca",
+                "ajo",
+                "cebolla",
+                "jugo de limón",
+                "aceite de oliva",
+                "sal"
+            ]
+        },
+        {
+            "nombre": "Tamal en Cazuela",
+            "ingredientes": [
+                "maíz tierno molido",
+                "carne de cerdo",
+                "cebolla",
+                "ajo",
+                "pimiento",
+                "tomate",
+                "comino",
+                "aceite",
+                "sal"
+            ]
+        },
+        {
+            "nombre": "Tostones Rellenos",
+            "ingredientes": [
+                "plátano verde",
+                "aceite para freír",
+                "ropa vieja",
+                "ajo",
+                "sal",
+                "limón"
+            ]
+        },
+        {
+            "nombre": "Mojito Clásico",
+            "ingredientes": [
+                "ron blanco",
+                "hierbabuena",
+                "jugo de lima",
+                "azúcar",
+                "agua con gas",
+                "hielo"
+            ]
+        },
+        {
+            "nombre": "Daiquirí Tropical",
+            "ingredientes": [
+                "ron blanco",
+                "jugo de lima",
+                "jarabe de azúcar",
+                "hielo"
+            ]
+        },
+        {
+            "nombre": "Cuba Libre Tropical",
+            "ingredientes": [
+                "ron dorado",
+                "refresco de cola",
+                "jugo de lima",
+                "hielo"
+            ]
+        },
+        {
+            "nombre": "Piña Colada Caribeña",
+            "ingredientes": [
+                "ron blanco",
+                "crema de coco",
+                "jugo de piña",
+                "hielo"
+            ]
+        },
+        {
+            "nombre": "Guarapo con Limón",
+            "ingredientes": [
+                "jugo de caña de azúcar",
+                "jugo de limón",
+                "hielo"
+            ]
+        },
+        {
+            "nombre": "Flan Cubano Casero",
+            "ingredientes": [
+                "huevos",
+                "leche condensada",
+                "leche evaporada",
+                "azúcar",
+                "vainilla"
+            ]
+        },
+        {
+            "nombre": "Arroz con Leche Criollo",
+            "ingredientes": [
+                "arroz",
+                "leche entera",
+                "azúcar",
+                "canela en rama",
+                "cáscara de limón",
+                "vainilla"
+            ]
+        },
+        {
+            "nombre": "Dulce de Coco Tropical",
+            "ingredientes": [
+                "coco rallado",
+                "azúcar",
+                "canela",
+                "agua",
+                "clavo"
+            ]
+        },
+        {
+            "nombre": "Pastel Tres Leches Tropical",
+            "ingredientes": [
+                "bizcocho esponjoso",
+                "leche condensada",
+                "leche evaporada",
+                "nata líquida",
+                "vainilla",
+                "canela"
+            ]
+        },
+        {
+            "nombre": "Casquitos de Guayaba y Queso",
+            "ingredientes": [
+                "guayaba",
+                "azúcar",
+                "agua",
+                "canela",
+                "queso crema"
+            ]
+        }
+    ]
+}

@@ -42,4 +42,5 @@ const url = window.location.href;
 if (url.includes("detalle.html")) {
   const data = getLocal();
   createDetalleContent(data);
+  localStorage.clear();
 }
