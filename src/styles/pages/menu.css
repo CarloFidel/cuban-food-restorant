@@ -90,6 +90,41 @@
       black 92%,
       transparent 100%
     );
+
+    & article {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: var(--gap-lg);
+      border-radius: var(--radius-base);
+      padding: var(--gap-lg);
+
+      & img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        border: 2px solid var(--ink);
+      }
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--gap-base);
+      }
+
+      & .card-plato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap-md);
+        p {
+          text-align: center;
+          font-weight: 500;
+          font-size: 21px;
+        }
+      }
+    }
   }
 
   & h2::after {
@@ -105,41 +140,6 @@
       var(--accent-green)
     );
   }
-
-  & article {
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    gap: var(--gap-lg);
-    border-radius: var(--radius-base);
-    padding: var(--gap-lg);
-
-    & img {
-      width: 75px;
-      height: 75px;
-      border-radius: 50%;
-      border: 2px solid var(--ink);
-    }
-
-    & div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: var(--gap-base);
-    }
-
-    & .card-plato {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: var(--gap-md);
-      p {
-        text-align: center;
-        font-weight: 500;
-        font-size: 21px;
-      }
-    }
-  }
 }
 .openTag {
   height: 450px !important;
@@ -152,6 +152,20 @@
     rgba(137, 201, 81, 0.479)
   );
   box-shadow: inset 0px 0px 18px 1px rgba(14, 50, 5, 0.22);
+  &:hover {
+    background: linear-gradient(
+      125deg,
+      rgba(193, 236, 162, 0.308),
+      rgba(137, 201, 81, 0.579)
+    );
+  }
+  &:active {
+    background: linear-gradient(
+      125deg,
+      rgba(193, 236, 162, 0.308),
+      rgba(70, 104, 40, 0.579)
+    );
+  }
 }
 .section-bebidas > .accordeon > article {
   background: linear-gradient(
@@ -160,12 +174,41 @@
     rgba(81, 157, 201, 0.479)
   );
   box-shadow: inset 0px 0px 18px 1px rgba(5, 42, 50, 0.22);
+  &:hover {
+    background: linear-gradient(
+      125deg,
+      rgba(162, 205, 236, 0.208),
+      rgba(81, 157, 201, 0.679)
+    );
+  }
+  &:active {
+    background: linear-gradient(
+      125deg,
+      rgba(162, 205, 236, 0.208),
+      rgba(5, 42, 50, 0.679)
+    );
+  }
 }
 .section-postres > .accordeon > article {
   background: linear-gradient(
     125deg,
-    rgba(236, 230, 162, 0.208),
-    rgba(201, 197, 81, 0.479)
+      rgba(236, 230, 162, 0.208),
+      rgba(201, 197, 81, 0.479)
   );
   box-shadow: inset 0px 0px 18px 1px rgba(42, 50, 5, 0.22);
+  &:hover {
+    background: linear-gradient(
+      125deg,
+      rgba(236, 230, 162, 0.208),
+      rgba(201, 197, 81, 0.679)
+    );
+  }
+  &:active {
+    background: linear-gradient(
+      125deg,
+      rgba(236, 230, 162, 0.208),
+      rgba(96, 95, 5, 0.679)
+
+    );
+  }
 }
