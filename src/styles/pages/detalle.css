@@ -1,0 +1,48 @@
+.section-detalle {
+  width: 100%;
+  position: relative;
+  padding: auto var(--padding-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & img {
+    width: 100%;
+    filter: contrast(50%) brightness(85%);
+    object-fit: cover;
+    mask-image: linear-gradient(
+      to bottom,
+      black 10%,
+      black 80%,
+      transparent 100%
+    );
+  }
+
+  & h1 {
+    padding: 0px var(--padding-base);
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: left;
+  }
+
+  & .detalle-precio {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: left;
+    padding: var(--padding-base) var(--padding-lg);
+    width: fit-content;
+    border-radius: var(--padding-lg);
+    left: var(--padding-base);
+    background: linear-gradient(95deg, var(--bg-cream), var(--ink-bright));
+    font-size: 25px;
+
+    & + * {
+      margin-top: calc(var(--margin-lg) * 1.5);
+      margin-bottom: var(--margin-lg);
+      width: 85%;
+      text-align: center;
+    }
+  }
+}

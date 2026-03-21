@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "browserslist": "since 2016-03, not dead, > 0.2%",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel index.html",
     "build": "parcel build",
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",
