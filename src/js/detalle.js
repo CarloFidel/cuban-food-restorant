@@ -15,18 +15,6 @@ export function createDetalleContent(data) {
   const detalleDescripcion = document.getElementById("detalle-descripcion");
   const detalleIngredientes = document.getElementById("detalle-ingredientes");
 
-  if (
-    !detalleImg ||
-    !detalleTitulo ||
-    !detallePrecio ||
-    !detalleDescripcion ||
-    !detalleIngredientes
-  ) {
-    console.error("No se encontraron los elementos del detalle en el DOM.");
-    return;
-  }
-
-
   detalleImg.src = imagen;
   detalleTitulo.textContent = titulo;
   detallePrecio.textContent = precio;
@@ -42,5 +30,7 @@ export function createDetalleContent(data) {
     detalleIngredientes.innerHTML = ingrMayus
       .map((ingrediente) => `<p>${ingrediente}</p>`)
       .join("");
+  } else{
+    detalleIngredientes.classList.add("hidden");
   }
 }

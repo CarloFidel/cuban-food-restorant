@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalles</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <include class="hidden" src="src/header.html"></include>
+      <include src="src/sideMenu.html"></include>
+    </header>
+    <main>
+      <section class="section-detalle-musica">
+        <img id="bandaImagen" />
+        <h1 id="tituloBanda"></h1>
+        <p class="banda-descripcion" id="banda-descripcion"></p>
+        <div class="banda-discografia" id="bandaDiscografia">
+          <h3>Discografía</h3>
+        </div>
+      </section>
+      <a href="/src/pages/cartelera.html" class="primary-button"
+        >Volver a cartelera</a
+      >
+    </main>
+    <footer id="contacto">
+      <include src="src/footer.html"></include>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

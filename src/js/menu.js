@@ -22,7 +22,9 @@ export function clickCard(cards) {
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       const titulo = card.querySelector("h3").textContent;
-      const descripcion = card.querySelector(".plato-descripcion p").textContent;
+      const descripcion = card.querySelector(
+        ".plato-descripcion p",
+      ).textContent;
       const precio = card.querySelector(".plato-precio").textContent;
       const imagen = card.querySelector("img").src;
 
@@ -35,9 +37,8 @@ export function clickCard(cards) {
 
       const isSave = setLocal(data);
       if (!isSave) {
-        console.error("Error al guardar los datos en localStorage");
-      }else{
-        console.log("Datos guardados en localStorage:", data);
+        return;
+      } else {
         window.location.href = "/pages/detalle.html";
       }
     });

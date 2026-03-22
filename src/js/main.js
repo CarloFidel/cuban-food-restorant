@@ -1,5 +1,7 @@
 import { getLocal } from "../utils/getLocal.js";
+import { clickCardCartelera } from "./cartelera.js";
 import { createDetalleContent } from "./detalle.js";
+import { createDetalleCarteleraContent } from "./detalle_cartelera.js";
 import { clickCard, OpenCloseTag } from "./menu.js";
 import { hideMenu, showMenu } from "./sideMenu.js";
 
@@ -30,17 +32,40 @@ if (nuestrosPlatos && nuestrosBebidas && nuestrosPostres) {
 Click en cards de menu.html
 -------------------------------------- */
 
-const cards = document.querySelectorAll("article:not(.carousel)");
+const cards = document.querySelectorAll(
+  "article:not(.carousel):not(.card-bandas)",
+);
 if (cards) {
-  clickCard(cards);
+  clickCard(cards); //La función clickCard se encarga de agregar el evento
+  // click a cada card, para luego guardar la información en
+  // localStorage y redirigir a detalle.html.
 }
 
 /* -----------------------------------
-Construccion del contenido de detalles
+Construccion del contenido de detalles.html
 -------------------------------------- */
 const url = window.location.href;
 if (url.includes("detalle.html")) {
   const data = getLocal();
   createDetalleContent(data);
-  localStorage.clear();
+}
+
+/* -----------------------------------
+Click en cards de cartelera.html
+-------------------------------------- */
+const sectionCartelera = document.querySelector("#sectionCartelera");
+if (sectionCartelera) {
+  const cardsCartelera = sectionCartelera.querySelectorAll("article");
+  if (cardsCartelera) {
+    clickCardCartelera(cardsCartelera);
+  }
+}
+
+/* -------------------------------------------------------
+Construccion del contenido de detalles_cartelera.html
+---------------------------------------------------------- */
+const urlCartelera = window.location.href;
+if (urlCartelera.includes("detalle_cartelera.html")) {
+  const dataCartelera = getLocal();
+  createDetalleCarteleraContent(dataCartelera);
 }

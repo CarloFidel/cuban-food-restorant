@@ -1,0 +1,96 @@
+{
+  "bandas": [
+    {
+      "id": "banda_01",
+      "nombre": "Habana Son",
+      "imagen": "quintet.png",
+      "dia": "Jueves",
+      "hora": "21:00",
+      "formatoMusical": "Son tradicional, Bolero, Guaracha",
+      "resena": "Conjunto nacido en Centro Habana que mezcla son tradicional, bolero y guaracha. Sus integrantes llevan mas de una decada en escenarios de peñas y festivales locales, con un repertorio que rescata clasicos cubanos para nuevas generaciones.",
+      "discografia": [
+        {
+          "titulo": "Sones de Centro Habana",
+          "año": 2018
+        },
+        {
+          "titulo": "Guarachas del Recuerdo",
+          "año": 2021
+        },
+        {
+          "titulo": "La Tradición Continúa",
+          "año": 2024
+        }
+      ]
+    },
+    {
+      "id": "banda_02",
+      "nombre": "Clave del Malecón",
+      "imagen": "quintet.png",
+      "dia": "Viernes",
+      "hora": "21:30",
+      "formatoMusical": "Jazz Latino, Timba, Percusión Afrocubana",
+      "resena": "Proyecto musical formado por instrumentistas de jazz latino y timba suave. Su estilo combina percusion afrocubana, piano melodico y voces armonizadas, creando un sonido elegante para noches de cena y baile.",
+      "discografia": [
+        {
+          "titulo": "Elegancia en el Malecón",
+          "año": 2019
+        },
+        {
+          "titulo": "Noches de Timba y Jazz",
+          "año": 2022
+        },
+        {
+          "titulo": "Harmonia Caribeña",
+          "año": 2024
+        }
+      ]
+    },
+    {
+      "id": "banda_03",
+      "nombre": "Brisa Caribe",
+      "imagen": "quintet.png",
+      "dia": "Sábado",
+      "hora": "22:00",
+      "formatoMusical": "Salsa Clásica, Cha cha cha, Música Popular",
+      "resena": "Banda de trayectoria regional con influencias de salsa clasica, cha cha cha y musica popular bailable. Han participado en ciclos culturales gastronomicos, destacando por su energia en vivo y su cercania con el publico.",
+      "discografia": [
+        {
+          "titulo": "Energía de Brisa",
+          "año": 2017
+        },
+        {
+          "titulo": "Ritmos del Caribe",
+          "año": 2020
+        },
+        {
+          "titulo": "Baile y Sabor",
+          "año": 2023
+        }
+      ]
+    },
+    {
+      "id": "banda_04",
+      "nombre": "Raíces del Son",
+      "imagen": "quintet.png",
+      "dia": "Domingo",
+      "hora": "20:30",
+      "formatoMusical": "Son Montuno, Trova Tradicional, Música Histórica",
+      "resena": "Agrupacion dedicada a preservar el son montuno y la trova tradicional. Sus musicos, con formacion academica y callejera, ofrecen un repertorio historico comentado que conecta memoria, ritmo y cultura cubana.",
+      "discografia": [
+        {
+          "titulo": "Montuno de la Memoria",
+          "año": 2016
+        },
+        {
+          "titulo": "Trovadores Históricos",
+          "año": 2020
+        },
+        {
+          "titulo": "Raíces Eternas",
+          "año": 2023
+        }
+      ]
+    }
+  ]
+}
