@@ -7,7 +7,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .carousel:scroll-button(right),
   .carousel:scroll-button(left) {
     content: url("../../assets/MaterialSymbolsLightArrowForwardIosRounded.svg");
@@ -40,3 +40,4 @@
     opacity: 0.5;
   }
 }
+ */
