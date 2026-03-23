@@ -7,9 +7,9 @@
   display: none;
 }
 
-/* @media (min-width: 768px) {
-  .carousel:scroll-button(right),
-  .carousel:scroll-button(left) {
+@media (min-width: 768px) {
+  .carousel::scroll-button(right),
+  .carousel::scroll-button(left) {
     content: url("../../assets/MaterialSymbolsLightArrowForwardIosRounded.svg");
     border: none;
     width: 50px;
@@ -29,15 +29,14 @@
     cursor: pointer;
     transition: all 0.2s ease;
   }
-  .carousel:scroll-button(left) {
+  .carousel::scroll-button(left) {
     content: url("../../assets/MaterialSymbolsLightArrowBackIosRounded.svg");
     position-area: left center;
     translate: 25%;
     padding-left: 15px;
   }
-  .carousel:scroll-button(right):disabled,
-  .carousel:scroll-button(left):disabled {
+  .carousel::scroll-button(right):disabled,
+  .carousel::scroll-button(left):disabled {
     opacity: 0.5;
   }
 }
- */

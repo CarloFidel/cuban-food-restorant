@@ -159,10 +159,6 @@ header {
   gap: var(--gap-md);
   margin-bottom: var(--margin-base);
 
-  & div {
-    border-bottom: 4px solid var(--ink-soft);
-    width: calc(90vw / 3);
-  }
 }
 
 .section-sugerencias {
