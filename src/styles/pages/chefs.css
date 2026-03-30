@@ -1,0 +1,57 @@
+.section-hero-chefs {
+  width: 100%;
+  position: relative;
+  padding: auto var(--padding-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & img {
+    width: 100%;
+    filter: contrast(50%) brightness(85%);
+    object-fit: cover;
+    mask-image: linear-gradient(
+      to bottom,
+      black 10%,
+      black 60%,
+      transparent 98%
+    );
+  }
+
+  & h1 {
+    padding: 0px var(--padding-base);
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    text-align: left;
+
+  }
+}
+
+.section-chefs {
+  width: 100%;
+  position: relative;
+  padding: auto var(--padding-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & .banda-discografia {
+    width: 100%;
+    padding: var(--padding-md);
+
+    & h3 {
+      margin-bottom: var(--margin-lg);
+    }
+  }
+
+  & article {
+    margin-top: var(--padding-lg);
+    
+    h2 + * {
+        border-bottom: 1px solid var(--ink-soft);
+        width: 60%;
+        margin-bottom: var(--padding-md);
+    }
+  }
+}

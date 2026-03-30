@@ -7,7 +7,8 @@
     "src/pages/menu.html",
     "src/pages/cartelera.html",
     "src/pages/detalle.html",
-    "src/pages/detalle_cartelera.html"
+    "src/pages/detalle_cartelera.html",
+    "src/pages/chefs.html"
   ],
   "browserslist": "since 2016-03, not dead, > 0.2%",
   "scripts": {
