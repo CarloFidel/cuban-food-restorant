@@ -8,14 +8,14 @@ html {
   color: var(--ink-soft)
 }
 h1 {
-  font-size: 9vw;
+  font-size: min(9vw, 82px);
   font-weight: 700;
-  line-height: 8.5vw;
+  line-height: min(8.5vw, 80px);
   text-align: left;
   color: var(--ink-bright);
 }
 h2 {
-  font-size: 7.5vw;
+  font-size: min(6.5vw, 40px);
   font-weight: 500;
   line-height: 9.5vw;
 }

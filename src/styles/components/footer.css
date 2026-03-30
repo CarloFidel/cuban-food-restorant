@@ -9,6 +9,11 @@ footer {
   margin-bottom: var(--margin-base);
 
   & .reserva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
     & h2 {
       color: var(--ink-soft);
@@ -20,34 +25,35 @@ footer {
         margin-bottom: var(--margin-base);
       }
     }
-  }
 
-  & p {
-    text-align: center;
-    color: var(--ink-soft);}
-
-  & form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: var(--gap-base);
-    width: 100%;
-    max-width: 400px;
-    color: var(--ink-soft);
-
-    & a {
-      margin: var(--margin-base) var(--margin-base);
-      width: 90%;
+    & p {
+      text-align: center;
+      color: var(--ink-soft);
     }
-    & label {
+
+    & form {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
+      gap: var(--gap-base);
+      color: var(--ink-soft);
       width: 90%;
+
+      & a {
+        margin: var(--margin-base) var(--margin-base);
+        width: 100%;
+      }
+      & label {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 90%;
+      }
     }
   }
+
   & .redes-container {
     display: flex;
     justify-content: center;
@@ -75,5 +81,28 @@ footer {
     align-items: center;
     gap: var(--gap-md);
     margin-top: var(--margin-base);
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    & .reserva {
+
+      & form {
+        width: 70%;
+
+        & a {
+          width: 50%;
+        }
+      }
+    }
+
+    .footer-data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: var(--gap-lg);
+    }
   }
 }

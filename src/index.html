@@ -9,7 +9,7 @@
   <body>
     <header>
       <include class="hidden" src="src/header.html"></include>
-      <include  src="src/sideMenu.html"></include>
+      <include src="src/sideMenu.html"></include>
     </header>
 
     <main>
@@ -36,34 +36,40 @@
         </div>
       </section>
 
-      <section class="section-categorias">
-        <svg width="35" height="35">
-          <use href="./assets/sprite.svg#arrow-right" />
-        </svg>
-
+      <section class="section-categorias carousel">
         <article>
           <img src="public/mojito.png" alt="imagen de mojito" />
-          <h3>Nuestros cocteles</h3>
-          <p>Bebidas tropicales que evocan el frescor del caribe</p>
-          <a class="secondary-button" href="/src/pages/menu.html#section-bebidas"
-            >Carta de bebidas</a
-          >
+          <div class="article-content-container">
+            <h3>Nuestros cocteles</h3>
+            <p>Bebidas tropicales que evocan el frescor del caribe</p>
+            <a
+              class="secondary-button"
+              href="/src/pages/menu.html#section-bebidas"
+              >Carta de bebidas</a
+            >
+          </div>
         </article>
         <article>
           <img src="public/plato-frituritas.png" alt="imagen de frituritas" />
-          <h3>Comida tradicional</h3>
-          <p>Bocados crujientes que capturan la esencia de la cocina cubana</p>
-          <a class="secondary-button" href="/src/pages/menu.html"
-            >Visita nuestra carta</a
-          >
+          <div class="article-content-container">
+            <h3>Comida tradicional</h3>
+            <p>
+              Bocados crujientes que capturan la esencia de la cocina cubana
+            </p>
+            <a class="secondary-button" href="/src/pages/menu.html"
+              >Visita nuestra carta</a
+            >
+          </div>
         </article>
         <article>
           <img src="public/quintet.png" alt="imagen de quinteto" />
-          <h3>Música tradicional</h3>
-          <p>Música en vivo que llena de ritmo y alegría nuestro local</p>
-          <a class="secondary-button" href="/src/pages/cartelera.html"
-            >Programación musical</a
-          >
+          <div class="article-content-container">
+            <h3>Música tradicional</h3>
+            <p>Música en vivo que llena de ritmo y alegría nuestro local</p>
+            <a class="secondary-button" href="/src/pages/cartelera.html"
+              >Programación musical</a
+            >
+          </div>
         </article>
       </section>
 
@@ -72,429 +78,254 @@
         <svg width="30" height="30">
           <use href="./assets/sprite.svg#chef" />
         </svg>
-        <div class="div-sugerencias">
+        <div class="div-sugerencias carousel">
           <article class="card-sugerencia">
             <img
               src="/src/public/plato-frituritas.png"
               alt="Plato de frituritas cubanas"
             />
-            <h3>Frituritas cubanas</h3>
-            <p class="sugerencia-description">
-              Crujientes por fuera, suaves por dentro. Nuestras frituritas de
-              malanga son el bocado perfecto para compartir y disfrutar del
-              auténtico sabor cubano.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
+            <div class="article-content-container">
+              <h3>Frituritas cubanas</h3>
+              <p class="sugerencia-description">
+                Nuestras frituritas de malanga son el bocado perfecto para
+                compartir y disfrutar del auténtico sabor cubano.
+              </p>
+              <div class="stars-container">
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
               </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
+              <a href="/src/pages/menu.html" class="primary-button"
+                >Visitar carta</a
+              >
             </div>
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
           </article>
           <article class="card-sugerencia">
             <img
               src="/src/public/plato-frituritas.png"
               alt="Plato de frituritas cubanas"
             />
-            <h3>Yuca con mojo criollo</h3>
-            <p class="sugerencia-description">
-              Yuca tierna bañada en mojo de ajo, limón y cebolla. Un clásico
-              cubano lleno de aroma y sabor casero para abrir el apetito.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
+            <div class="article-content-container">
+              <h3>Yuca con mojo criollo</h3>
+              <p class="sugerencia-description">
+                Yuca tierna bañada en mojo de ajo, limón y cebolla. Un clásico
+                cubano lleno de aroma y sabor casero para abrir el apetito.
+              </p>
+              <div class="stars-container">
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="22" height="22">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
               </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
 
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
+              <a href="/src/pages/menu.html" class="primary-button"
+                >Visitar carta</a
+              >
+            </div>
           </article>
           <article class="card-sugerencia">
             <img
               src="/src/public/plato-frituritas.png"
               alt="Plato de frituritas cubanas"
             />
-            <h3>Tostones con salsa de ajo</h3>
-            <p class="sugerencia-description">
-              Plátano verde dorado y crujiente, acompañado de una salsa suave de
-              ajo. Ideal para compartir mientras disfrutas la música en vivo.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
+            <div class="article-content-container">
+              <h3>Tostones con salsa de ajo</h3>
+              <p class="sugerencia-description">
+                Plátano verde dorado y crujiente, acompañado de una salsa suave
+                de ajo. Ideal para compartir mientras disfrutas la música en
+                vivo.
+              </p>
+              <div class="stars-container">
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
               </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
 
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
+              <a href="/src/pages/menu.html" class="primary-button"
+                >Visitar carta</a
+              >
+            </div>
           </article>
           <article class="card-sugerencia">
             <img
               src="/src/public/plato-frituritas.png"
               alt="Plato de frituritas cubanas"
             />
-            <h3>Croquetas de jamón</h3>
-            <p class="sugerencia-description">
-              Croquetas cremosas por dentro y doradas por fuera, preparadas al
-              estilo tradicional. Un bocado suave que siempre pide repetición.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
+            <div class="article-content-container">
+              <h3>Croquetas de jamón</h3>
+              <p class="sugerencia-description">
+                Croquetas cremosas por dentro y doradas por fuera, preparadas al
+                estilo tradicional. Un bocado suave que siempre pide repetición.
+              </p>
+              <div class="stars-container">
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
               </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
 
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
+              <a href="/src/pages/menu.html" class="primary-button"
+                >Visitar carta</a
+              >
+            </div>
           </article>
           <article class="card-sugerencia">
             <img
               src="/src/public/plato-frituritas.png"
               alt="Plato de frituritas cubanas"
             />
-            <h3>Empanaditas de carne</h3>
-            <p class="sugerencia-description">
-              Masa ligera y relleno jugoso de carne sazonada con especias
-              caribeñas. Perfectas para empezar con un toque auténtico y
-              sabroso.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
+            <div class="article-content-container">
+              <h3>Empanaditas de carne</h3>
+              <p class="sugerencia-description">
+                Masa ligera y relleno jugoso de carne sazonada con especias
+                caribeñas. Perfectas para empezar con un toque auténtico y
+                sabroso.
+              </p>
+              <div class="stars-container">
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
+                <div>
+                  <svg width="24" height="24">
+                    <use href="./assets/sprite.svg#star" />
+                  </svg>
+                </div>
               </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
 
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
+              <a href="/src/pages/menu.html" class="primary-button"
+                >Visitar carta</a
+              >
+            </div>
           </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/plato-frituritas.png"
-              alt="Plato de frituritas cubanas"
+        </div>
+        <div class="sugerencias-left-button-slide slide-button" id="sugerenciasLeftButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#333333"
+              d="m2.82 12l7.715 7.716q.22.22.218.528t-.224.529t-.529.221t-.529-.221L1.83 13.137q-.242-.243-.354-.54q-.111-.299-.111-.597t.111-.596q.112-.298.354-.54L9.47 3.22q.221-.221.532-.218q.31.003.532.224q.22.221.22.529t-.22.529z"
             />
-            <h3>Tamal en cazuela</h3>
-            <p class="sugerencia-description">
-              Maíz tierno cocinado lentamente con sofrito y especias cubanas.
-              Una receta de tradición familiar con textura cremosa y
-              reconfortante.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
-
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
-          </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/plato-frituritas.png"
-              alt="Plato de frituritas cubanas"
+          </svg>
+        </div>
+        <div class="sugerencias-right-button-slide slide-button" id="sugerenciasRightButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#333333"
+              d="M15.187 12L7.47 4.285q-.221-.221-.218-.532q.003-.31.224-.532Q7.698 3 8.009 3q.31 0 .532.221l7.636 7.643q.242.242.354.54t.111.596t-.111.596t-.354.54L8.535 20.78q-.222.221-.53.218q-.307-.003-.528-.224t-.221-.532t.221-.531z"
             />
-            <h3>Picadillo a la habanera</h3>
-            <p class="sugerencia-description">
-              Carne molida con aceitunas, pasas y un toque de comino, cocinada a
-              fuego lento para lograr un sabor profundo y muy cubano.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
-
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
-          </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/plato-frituritas.png"
-              alt="Plato de frituritas cubanas"
-            />
-            <h3>Arroz congrí especial</h3>
-            <p class="sugerencia-description">
-              Mezcla clásica de arroz y frijoles negros con sazón criolla,
-              cocinada al punto para acompañar cualquier plato del menú.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
-
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
-          </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/plato-frituritas.png"
-              alt="Plato de frituritas cubanas"
-            />
-            <h3>Lechón asado al carbón</h3>
-            <p class="sugerencia-description">
-              Cerdo marinado en naranja agria y especias, asado hasta quedar
-              jugoso y dorado. Un imprescindible para amantes del sabor intenso.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
-
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
-          </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/plato-frituritas.png"
-              alt="Plato de frituritas cubanas"
-            />
-            <h3>Flan de coco casero</h3>
-            <p class="sugerencia-description">
-              Postre suave y cremoso con notas tropicales de coco y caramelo. El
-              cierre perfecto para una experiencia completa de sabor cubano.
-            </p>
-            <div class="stars-container">
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-              <div>
-                <svg width="24" height="24">
-                  <use href="./assets/sprite.svg#star" />
-                </svg>
-              </div>
-            </div>
-
-            <a href="/src/pages/menu.html" class="primary-button"
-              >Visitar carta</a
-            >
-          </article>
+          </svg>
         </div>
       </section>
     </main>

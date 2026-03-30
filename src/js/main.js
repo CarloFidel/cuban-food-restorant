@@ -1,4 +1,5 @@
 import { getLocal } from "../utils/getLocal.js";
+import { handleSlide } from "../utils/handleSlide.js";
 import { clickCardCartelera } from "./cartelera.js";
 import { createDetalleContent } from "./detalle.js";
 import { createDetalleCarteleraContent } from "./detalle_cartelera.js";
@@ -68,4 +69,14 @@ const urlCartelera = window.location.href;
 if (urlCartelera.includes("detalle_cartelera.html")) {
   const dataCartelera = getLocal();
   createDetalleCarteleraContent(dataCartelera);
+}
+/* -------------------------------------------------------
+Slide en index.html section-sugerencias
+---------------------------------------------------------- */
+const buttonRight = document.querySelector("#sugerenciasRightButton");
+const buttonLeft = document.querySelector("#sugerenciasLeftButton");
+const slideContainer = document.querySelector(".div-sugerencias");
+
+if (buttonRight && buttonLeft && slideContainer) {
+  handleSlide(buttonRight, buttonLeft, slideContainer);
 }

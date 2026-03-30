@@ -1,15 +1,19 @@
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
 }
 
-/* @media  (min-width: 768px) {
-    main{    
-
-    }
-
-} */
+@media (min-width: 768px) {
+  main {
+    padding: var(--padding-lg) var(--padding-lg);
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    padding: var(--padding-lg) calc(var(--padding-lg) * 2);
+  }
+}

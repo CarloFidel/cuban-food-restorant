@@ -1,42 +1,9 @@
 .carousel {
   scroll-behavior: smooth;
-  anchor-name: --carousel;
   scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 .carousel::-webkit-scrollbar {
   display: none;
 }
 
-@media (min-width: 768px) {
-  .carousel::scroll-button(right),
-  .carousel::scroll-button(left) {
-    content: url("../../assets/MaterialSymbolsLightArrowForwardIosRounded.svg");
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--accent-yellow);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5px;
-    padding-left: 8px;
-    position: fixed;
-    position-anchor: --carousel;
-    position-area: right center;
-    translate: -25%;
-    color: var(--accent-yellow);
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  .carousel::scroll-button(left) {
-    content: url("../../assets/MaterialSymbolsLightArrowBackIosRounded.svg");
-    position-area: left center;
-    translate: 25%;
-    padding-left: 15px;
-  }
-  .carousel::scroll-button(right):disabled,
-  .carousel::scroll-button(left):disabled {
-    opacity: 0.5;
-  }
-}
