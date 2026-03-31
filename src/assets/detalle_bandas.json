@@ -3,7 +3,7 @@
     {
       "id": "banda_01",
       "nombre": "Habana Son",
-      "imagen": "quintet.png",
+      "imagen": "habanaSon.png",
       "dia": "Jueves",
       "hora": "21:00",
       "formatoMusical": "Son tradicional, Bolero, Guaracha",
@@ -26,7 +26,7 @@
     {
       "id": "banda_02",
       "nombre": "Clave del Malecón",
-      "imagen": "quintet.png",
+      "imagen": "claveMalecon.png",
       "dia": "Viernes",
       "hora": "21:30",
       "formatoMusical": "Jazz Latino, Timba, Percusión Afrocubana",
@@ -49,7 +49,7 @@
     {
       "id": "banda_03",
       "nombre": "Brisa Caribe",
-      "imagen": "quintet.png",
+      "imagen": "brisaCaribe.png",
       "dia": "Sábado",
       "hora": "22:00",
       "formatoMusical": "Salsa Clásica, Cha cha cha, Música Popular",
@@ -72,7 +72,7 @@
     {
       "id": "banda_04",
       "nombre": "Raíces del Son",
-      "imagen": "quintet.png",
+      "imagen": "raicesDelSon.png",
       "dia": "Domingo",
       "hora": "20:30",
       "formatoMusical": "Son Montuno, Trova Tradicional, Música Histórica",

@@ -10,14 +10,14 @@
   & h1 {
     padding: 0px var(--padding-base);
     position: absolute;
-    top: 20%;
+    top: 50%;
     width: 100%;
     text-align: center;
   }
 
   & p {
     position: absolute;
-    top: 40%;
+    top: 70%;
     color: var(--ink-bright);
     width: 80%;
     text-align: center;
@@ -28,8 +28,8 @@
     height: auto;
     scroll-snap-align: start;
     object-fit: cover;
-    filter: contrast(40%) brightness(85%);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    filter: contrast(60%) brightness(85%);
+    mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
   }
 }
 
@@ -44,14 +44,24 @@
   & article {
     width: 100%;
     border-radius: var(--radius-md);
+    border: 1px solid var(--accent-wine-hover);
     padding: var(--padding-base);
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     gap: var(--gap-md);
-    box-shadow: inset 0px 0px 18px 1px rgba(53, 56, 4, 0.62);
     padding: var(--padding-md);
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      & img {
+        scale: 1.02;
+      }
+    }
 
     & img {
       width: 100%;
@@ -59,6 +69,48 @@
       object-fit: cover;
       filter: contrast(70%) brightness(85%);
       border-radius: var(--radius-md);
+      transition: all 0.6s ease;
+    }
+  }
+}
+/* ----------------------------------------------------------
+Media Queries
+ ----------------------------------------------------------*/
+@media (min-width: 768px) {
+  .section-cartelera {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-md);
+
+    & h2 {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .section-hero-cartelera {
+    & h1 {
+      top: 50%;
+
+      & + * {
+        top: 70%;
+        font-size: 32px;
+      }
+    }
+
+    & img {
+      height: 50dvh;
+    }
+  }
+
+  .section-cartelera {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap-lg);
+
+    & h2 {
+      display: none;
     }
   }
 }

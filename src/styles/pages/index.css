@@ -87,6 +87,7 @@ header {
 
     & a {
       width: var(--w-prmy-btn-desktop);
+      margin-bottom: var(--margin-lg);
     }
   }
 }
@@ -398,13 +399,30 @@ Media Queries
       bottom: 20vh;
       cursor: pointer;
       visibility: visible;
+      transition: all 0.3s ease;
+      border: 1px solid var(--accent-wine-hover);
+      border-radius: 50%;
+      padding-top: 5.5px;
+      background-color: rgba(76, 76, 76, 0.107);
+
+      &:hover {
+        background-color: rgba(76, 76, 76, 0.2);
+      }
+      &:active {
+        background-color: rgba(76, 76, 76, 0.3);
+        scale: 0.98;
+      }
     }
 
     & .sugerencias-left-button-slide {
-      left: -25px;
+      left: -50px;
+      padding-left: 9px;
+      padding-right: 3px;
     }
     & .sugerencias-right-button-slide {
-      right: -25px;
+      right: -50px;
+      padding-right: 5px;
+      padding-left: 8px;
     }
   }
 }
