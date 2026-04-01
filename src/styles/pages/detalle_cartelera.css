@@ -1,4 +1,4 @@
-.section-detalle {
+.section-detalle-cartelera {
   width: 100%;
   position: relative;
   padding: auto var(--padding-lg);
@@ -23,7 +23,6 @@
     top: 60%;
     width: 100%;
     text-align: left;
-
   }
 }
 .section-description,
@@ -42,5 +41,45 @@
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-lg);
+  }
+}
+/* ----------------------------------------------------------
+Media Queries
+ ----------------------------------------------------------*/
+
+@media (min-width: 1025px) {
+  .section-detalle-cartelera {
+    & h1 {
+      top: 70%;
+
+      & + * {
+        margin-bottom: -40px;
+      }
+    }
+
+    & img {
+      height: 50dvh;
+      object-position: center 10%;
+    }
+    & .detalle-precio {
+      top: 70%;
+    }
+  }
+  .section-description {
+    width: 60%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap-lg);
+
+    & h2 {
+      text-align: center;
+    }
+  }
+  .section-discografia {
+    & h2 {
+      text-align: center;
+    }
+    & .banda-discografia {
+      justify-content: center;
+    }
   }
 }

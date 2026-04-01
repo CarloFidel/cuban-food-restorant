@@ -1,3 +1,4 @@
+import { automaticCarousel } from "../utils/automaticCarousel.js";
 import { getLocal } from "../utils/getLocal.js";
 import { handleSlide } from "../utils/handleSlide.js";
 import { clickCardCartelera } from "./cartelera.js";
@@ -27,6 +28,16 @@ if (nuestrosPlatos && nuestrosBebidas && nuestrosPostres) {
   nuestrosPostres.addEventListener("click", () =>
     OpenCloseTag(nuestrosPostres),
   );
+}
+/* -----------------------------------
+Carousel automatico en index.html
+-------------------------------------- */
+const sectionHero = document.querySelector("#sectionHero");
+if (sectionHero) {
+  const carousel = sectionHero.querySelector(".carousel");
+  if (carousel) {
+    automaticCarousel(carousel, 5000);
+  }
 }
 
 /* -----------------------------------

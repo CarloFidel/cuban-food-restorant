@@ -81,8 +81,5 @@ Media Queries
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap-lg);
 
-    & h2 {
-      display: none;
-    }
   }
 }

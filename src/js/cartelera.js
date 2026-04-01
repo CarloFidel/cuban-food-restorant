@@ -8,7 +8,6 @@ export function clickCardCartelera(cards) {
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       const idBanda = card.id;
-      console.log(idBanda);
 
       const isSave = setLocal(idBanda);
       if (!isSave) {

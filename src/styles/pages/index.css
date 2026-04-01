@@ -11,7 +11,7 @@ header {
   }
 }
 
-.section-hero {
+.section-hero-index {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -252,7 +252,7 @@ Media Queries
     align-items: center;
     color: var(--ink-soft);
   }
-  .section-hero {
+  .section-hero-index {
     h1 {
       top: 40%;
 
@@ -322,9 +322,9 @@ Media Queries
 }
 
 @media (min-width: 1025px) {
-  .section-hero {
+  .section-hero-index {
     & h1 {
-      top: 50%;
+      top: 40%;
 
       & + * {
         top: 70%;

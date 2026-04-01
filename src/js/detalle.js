@@ -25,7 +25,6 @@ export function createDetalleContent(data) {
     !detalleDescripcion ||
     !detalleIngredientes
   ) {
-    console.error("No se encontraron los elementos del detalle en el DOM.");
     return;
   }
 

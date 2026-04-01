@@ -6,12 +6,6 @@ export function createDetalleCarteleraContent(dataCartelera) {
   const descriBanda = document.querySelector("#bandaDescripcion");
   const bandaDiscografia = document.querySelector("#bandaDiscografia");
 
-    console.log(bandaImg);
-    console.log(tituloBanda);
-    console.log(descriBanda);
-    console.log(bandaDiscografia);
-
-
   const idBanda = dataCartelera;
 
   const bandas = bandasJSON.bandas;

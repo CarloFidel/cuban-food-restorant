@@ -79,11 +79,10 @@ Media Queries
 @media (min-width: 1025px) {
   .section-detalle {
     & h1 {
-      top: 50%;
+      top: 45%;
 
       & + * {
-        top: 70%;
-        font-size: 32px;
+        margin-bottom: -40px;
       }
     }
 
@@ -91,7 +90,7 @@ Media Queries
       height: 50dvh;
     }
     & .detalle-precio {
-      top: 70%;
+      top: 60%;
     }
   }
   .detalle-ingredientes {
