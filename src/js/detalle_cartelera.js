@@ -5,6 +5,7 @@ export function createDetalleCarteleraContent(dataCartelera) {
   const tituloBanda = document.querySelector("#tituloBanda");
   const descriBanda = document.querySelector("#bandaDescripcion");
   const bandaDiscografia = document.querySelector("#bandaDiscografia");
+  const bandaVideo = document.querySelector("#bandaVideo");
 
   const idBanda = dataCartelera;
 
@@ -16,6 +17,7 @@ export function createDetalleCarteleraContent(dataCartelera) {
     const titulo = bandaFilter.nombre;
     const descripcion = bandaFilter.resena;
     const discografia = bandaFilter.discografia;
+    const video = bandaFilter.video;
 
 
     discografia.forEach((album) => {
@@ -34,5 +36,7 @@ export function createDetalleCarteleraContent(dataCartelera) {
     bandaImg.src = `/${img}`;
     tituloBanda.textContent = titulo;
     descriBanda.textContent = descripcion;
+    bandaVideo.setAttribute('src', video);
   }
+
 }

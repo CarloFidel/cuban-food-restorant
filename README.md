@@ -2,7 +2,7 @@
 <p>
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1008px" height="386px" viewBox="0 0 1408 786" preserveAspectRatio="xMidYMid meet">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="908px" height="286px" viewBox="0 0 1408 786" preserveAspectRatio="xMidYMid meet">
  <g fill="#fbfbf7">
  </g>
  <g fill="#0b5145">
@@ -61,6 +61,12 @@
 # La Isla Viva - Front-end
 
 Proyecto web de restaurante temático cubano desarrollado con HTML, CSS y JavaScript modular, utilizando Parcel como entorno de desarrollo. Incluye carta de platos y bebidas, cartelera musical, páginas de detalle y animaciones de interacción.
+
+## Enlace público al proyecto
+```
+https://laislaviva.netlify.app
+```
+
 
 ## Objetivo
 
@@ -132,29 +138,69 @@ npm run clean
 - src/assets/detalle_bandas.json: datos de bandas y discografía.
 - src/styles: estilos organizados por abstract, base, components, layout y pages.
 
-## Flujo funcional
 
-1. En menú y cartelera, al hacer click en una card se guarda información en localStorage con la clave data.
-2. La app redirige a la página de detalle correspondiente.
-3. En la página de detalle, se recupera data desde localStorage y se pinta el contenido dinámicamente.
-4. Las animaciones de transición se aplican con GSAP para mejorar la percepción de interacción.
+# Proceso de desarrollo para generar la plantilla de inicio con Parcel.
 
-## Datos dinámicos
+Para la creación de la plantilla de desarrollo en parcel fui a la documentación oficial en el sitio web de Parcel y seguí los pasos para crear el proyecto.
+1. Cree mi directorio donde está ubicado mi proyecto
+```
+mkdir mi-proyecto
+cd mi-proyecto
+```
+2. Inicialicé mi proyecto con node para que se creara el package.json
+```
+npm init
+```
+3. Después instalé Parcel
+```
+npm install parcel --save-dev
+```
+4. Cree la estructura básica, aunque ubiqué el archivo principal js main.js en la carpeta donde están todos los js
 
-- Detalle gastronómico:
-  - Se cruza el título seleccionado con src/assets/ingredientes.json.
-  - Si hay coincidencia, se muestra la sección de ingredientes.
-- Detalle de cartelera:
-  - Se busca la banda por id en src/assets/detalle_bandas.json.
-  - Se renderiza imagen, nombre, reseña y discografía.
+5. Para la ejecución del proyecto, y levantar el serviudor de desarrollo, utilicé el comando:
+```
+npm start
+```
+# Proceso de desarrollo para generar la plantilla de inicio con Parcel.
 
-## Convenciones actuales
+En este proyecto se utilizaron dos entornos principales: desarrollo y producción, gestionados mediante scripts definidos en el archivo package.json y utilizando el bundler Parcel.
 
-- Código JavaScript modular por responsabilidad.
-- Uso de includes para header, footer y side menu.
-- Estilos separados por tipo (base, componentes, páginas).
-- Persistencia temporal en localStorage para navegación entre páginas.
+## Entorno de desarrollo
+El entorno de desarrollo se utiliza durante la fase de creación y pruebas de la aplicación.
+Se ejecuta mediante el siguiente comando:
+```
+npm run parcel:dev
+```
+Esto levanta un Servidor local automático, hace recarga en caliente (hot reload), y brinda mensajes de error detallados.
 
-## Autoría y contexto académico
+## Entorno de producción
 
-Trabajo realizado para la asignatura de Front-end (UOC), centrado en maquetación, modularidad y comportamiento interactivo en cliente.
+El entorno de producción se utiliza para generar la versión final de la aplicación, lista para ser desplegada.
+Se ejecuta mediante el comando:
+```
+npm run parcel:build
+```
+Esto realiza la minificación del código y coloca lps archivos necesarios en la carpeta dist, dejándola lista para producción
+
+# Soporte a navegadores antiguos
+Para dar soporte a navegdores antiguos se definió en el package.json el siguiente comando:
+```
+  "browserslist": "since 2016-03, not dead, > 0.2%",
+```
+Este comando indica que Parcel incluye los navegadores lanzados desde marzo de 2016, excluye los que ya no tienen soporte (“dead”) y solo considera aquellos con más del 0.2% de uso global. Esto permite adaptar automáticamente el código para asegurar compatibilidad y buen rendimiento en los navegadores más relevantes.
+
+# Utilización de pre/postprocesadores
+Aunque no se han configurado pre/postprocesadores de forma manual, el proyecto sí hace uso de estas tecnologías de manera automática a través de Parcel, lo que permite simplificar el desarrollo y asegurar compatibilidad y optimización sin configuración adicional.
+## Preprocesadores
+No se han utilizado preprocesadores clásicos como Sass o Less de forma explícita. Sin embargo, se emplea el paquete posthtml-include, que actúa como un preprocesador de HTML, permitiendo dividir el código en componentes reutilizables e incluirlos en diferentes páginas mediante directivas de importación.
+## Postprocesadores
+Parcel adapta automáticamente el código JavaScript y CSS para garantizar compatibilidad con los navegadores definidos. Se aplican optimizaciones como minificación y transformación del código en el proceso de build. Se añaden prefijos CSS necesarios según los navegadores objetivo
+
+# Dependencias externas
+El proyecto utiliza varias dependencias externas gestionadas con npm para mejorar su funcionalidad. Como dependencia principal destaca GSAP, empleada para crear animaciones en la interfaz. Además, se incluyen herramientas de desarrollo como Parcel para el empaquetado del proyecto, junto con utilidades como posthtml-include, rimraf y npm-run-all, que facilitan la organización, automatización y mantenimiento del proyecto.
+
+# Accesibilidad
+En el proyecto se ha procurado usar una estructura HTML semántica, empleando etiquetas como 'header', 'main, 'section', 'article' y 'footer' para organizar el contenido de forma lógica. Esto mejora la comprensión del sitio tanto para los usuarios como para herramientas externas, como motores de búsqueda o lectores de pantalla. Además, se han aplicado buenas prácticas de accesibilidad, como el uso de atributos alt en imágenes, enlaces descriptivos y jerarquía correcta de encabezados, garantizando que la aplicación sea más usable para personas con discapacidades o que navegan mediante tecnologías asistivas.
+
+# Creación y publicación a Git y Github.
+Durante la etapa de desarrollo mantuve un flujo constante de commit a mi rama principal (que fue donde desarrollé todo el propyecto, no utilicé una rama de dev, quizá debí hacerlo). Además enñacé el repositorio de github con mi cuenta de netlify, lo cual me mantuvo actualizada la página en todo momento. 
