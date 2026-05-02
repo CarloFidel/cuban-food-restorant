@@ -25,6 +25,7 @@ export function clickCard(cards) {
       const descripcion = card.querySelector(
         ".plato-descripcion p",
       ).textContent;
+      const id = card.querySelector("img").id;
       const precio = card.querySelector(".plato-precio").textContent;
       const imagen = card.querySelector("img").src;
 
@@ -33,9 +34,11 @@ export function clickCard(cards) {
         descripcion,
         precio,
         imagen,
+        id,
       };
 
       const isSave = setLocal(data);
+      
       if (!isSave) {
         return;
       } else {

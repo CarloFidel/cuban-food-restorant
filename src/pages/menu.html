@@ -9,25 +9,55 @@
   <body>
     <header>
       <include class="hidden" src="src/header.html"></include>
-      <include  src="src/sideMenu.html"></include>
+      <include src="src/sideMenu.html"></include>
     </header>
-    
+
     <main>
       <section class="section-hero-menu" id="sectionHero-menu">
         <article class="carousel">
-          <img src="/src/public/ropa_vieja.png" alt="Plato de comida cubana" />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="/static/mobil/ropaVieja_mobil.png?as=webp&width=600"
+            />
+
+            <source
+              media="(min-width: 485px) and (max-width: 768px)"
+              srcset="/src/public/ropaVieja.png?as=webp&width=1200"
+            />
+
+            <img
+              src="/src/public/ropaVieja.png?as=webp&width=800"
+              alt="Ropa vieja cubana"
+            />
+          </picture>
         </article>
         <h1>Menu</h1>
-        <p>
-         Nuestros platos evocan la más profunda tradición caribeña
-        </p>
+        <p>Nuestros platos evocan la más profunda tradición caribeña</p>
       </section>
+
       <section class="section-platos" id="sectionPlatos">
         <h2>Nuestros platos</h2>
         <div class="accordeon">
           <article>
             <div class="card-plato">
-              <img src="/src/public/ropa_vieja.png" alt="Ropa vieja cubana" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/ropaVieja_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/ropaVieja.png?as=webp&width=1200"
+                />
+
+                <img
+                  src="/src/public/ropaVieja.png?as=webp&width=800"
+                  alt="Ropa vieja cubana"
+                  id="ropaVieja"
+                />
+              </picture>
               <p class="plato-precio">14,90 €</p>
             </div>
             <div class="plato-descripcion">
@@ -42,7 +72,23 @@
 
           <article>
             <div class="card-plato">
-              <img src="/src/public/lechonAsado.png" alt="Lechón Asado cubano" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/lechonAsado_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/lechonAsado.png?as=webp&width=1200"
+                />
+
+                <img
+                  src="/src/public/lechonAsado.png?as=webp&width=800"
+                  alt="Lechón Asado cubano"
+                  id="lechonAsado"
+                />
+              </picture>
               <p class="plato-precio">16,50 €</p>
             </div>
             <div class="plato-descripcion">
@@ -55,9 +101,23 @@
             </div>
           </article>
 
-          <article >
+          <article>
             <div class="card-plato">
-              <img src="/src/public/vacaFrita.png" alt="Vaca Frita cubana" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/vacaFrita_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/vacaFrita.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/vacaFrita.png?as=webp&width=800"
+                  alt="Vaca Frita cubana"
+                  id="vacaFrita"
+                />
               <p class="plato-precio">15,20 €</p>
             </div>
             <div class="plato-descripcion">
@@ -70,9 +130,25 @@
             </div>
           </article>
 
-          <article >
+          <article>
             <div class="card-plato">
-              <img src="/src/public/arrozConGri.png" alt="Arroz Congrí cubano" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/arrozConGri_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/arrozConGri.png?as=webp&width=1200"
+                />
+
+                <img
+                  src="/src/public/arrozConGri.png?as=webp&width=800"
+                  alt="Arroz Congrí cubano"
+                  id="arrozConGri"
+                />
+              </picture>
               <p class="plato-precio">9,90 €</p>
             </div>
             <div class="plato-descripcion">
@@ -85,9 +161,24 @@
             </div>
           </article>
 
-          <article >
+          <article>
             <div class="card-plato">
-              <img src="/src/public/ajiacoCriollo.png" alt="Ajiaco Criollo cubano" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/ajiacoCriollo_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/ajiacoCriollo.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/ajiacoCriollo.png?as=webp&width=800"
+                  alt="Ajiaco Criollo cubano"
+                  id="ajiacoCriollo"
+                />
+              </picture>
               <p class="plato-precio">12,50 €</p>
             </div>
             <div class="plato-descripcion">
@@ -100,9 +191,24 @@
             </div>
           </article>
 
-          <article >
+          <article>
             <div class="card-plato">
-              <img src="/src/public/picadilloHabanero.png" alt="Picadillo Habanero cubano" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/picadilloHabanero_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/picadilloHabanero.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/picadilloHabanero.png?as=webp&width=800"
+                  alt="Picadillo Habanero cubano"
+                  id="picadilloHabanero"
+                />
+              </picture>
               <p class="plato-precio">11,90 €</p>
             </div>
             <div class="plato-descripcion">
@@ -115,9 +221,24 @@
             </div>
           </article>
 
-          <article >
+          <article>
             <div class="card-plato">
-              <img src="/src/public/fricasePollo.png" alt="Fricasé de Pollo cubano" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/fricasePollo_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/fricasePollo.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/fricasePollo.png?as=webp&width=800"
+                  alt="Fricasé de Pollo cubano"
+                  id="fricasePollo"
+                />
+              </picture>
               <p class="plato-precio">12,90 €</p>
             </div>
             <div class="plato-descripcion">
@@ -130,9 +251,24 @@
             </div>
           </article>
 
-          <article >
+          <article>
             <div class="card-plato">
-              <img src="/src/public/yucaConMojo.png" alt="Yuca con Mojo cubana" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/tamalCasuela_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/tamalCasuela.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/tamalCasuela.png?as=webp&width=800"
+                  alt="Tamal en Cazuela cubano"
+                  id="tamalCasuela"
+                />
+              </picture>
               <p class="plato-precio">8,50 €</p>
             </div>
             <div class="plato-descripcion">
@@ -145,9 +281,24 @@
             </div>
           </article>
 
-          <article >
+          <article>
             <div class="card-plato">
-              <img src="/src/public/tamalCasuela.png" alt="Tamal en Cazuela cubano" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/tostonesRellenos_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/tostonesRellenos.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/tostonesRellenos.png?as=webp&width=800"
+                  alt="Tostones Rellenos cubanos"
+                  id="tostonesRellenos"
+                />
+              </picture>
               <p class="plato-precio">10,90 €</p>
             </div>
             <div class="plato-descripcion">
@@ -160,9 +311,24 @@
             </div>
           </article>
 
-          <article >
+          <article>
             <div class="card-plato">
-              <img src="/src/public/tostonesRellenos.png" alt="Tostones Rellenos cubanos" />
+              <picture> 
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/tostonesRellenos_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/tostonesRellenos.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/tostonesRellenos.png?as=webp&width=800"
+                  alt="Tostones Rellenos cubanos"
+                  id="tostonesRellenos"
+                />
+              </picture>
               <p class="plato-precio">11,50 €</p>
             </div>
             <div class="plato-descripcion">
@@ -176,12 +342,28 @@
           </article>
         </div>
       </section>
+
       <section class="section-bebidas" id="sectionBebidas">
         <h2>Nuestras bebidas</h2>
         <div class="accordeon">
           <article>
             <div class="card-plato">
-              <img src="/src/public/mojito.png" alt="Mojito clásico cubano" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/mojito_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/mojito.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/mojito.png?as=webp&width=800"
+                  alt="Mojito clásico cubano"
+                  id="mojito"
+                />
+              </picture>
               <p class="plato-precio">7,50 €</p>
             </div>
             <div class="plato-descripcion">
@@ -196,7 +378,21 @@
 
           <article>
             <div class="card-plato">
-              <img src="/src/public/daikiri.png" alt="Daiquirí tropical" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/daikiri_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/daikiri.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/daikiri.png?as=webp&width=800"
+                  alt="Daiquirí tropical"
+                  id="daikiri"
+                />
               <p class="plato-precio">7,90 €</p>
             </div>
             <div class="plato-descripcion">
@@ -211,7 +407,22 @@
 
           <article>
             <div class="card-plato">
-              <img src="/src/public/cubaLibre.png" alt="Cuba libre tropical" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/cubaLibre_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/cubaLibre.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/cubaLibre.png?as=webp&width=800"
+                  alt="Cuba libre tropical"
+                  id="cubaLibre"
+                />
+              </picture>
               <p class="plato-precio">6,90 €</p>
             </div>
             <div class="plato-descripcion">
@@ -226,7 +437,22 @@
 
           <article>
             <div class="card-plato">
-              <img src="/src/public/pinaColada.png" alt="Piña colada caribeña" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/pinaColada_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/pinaColada.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/pinaColada.png?as=webp&width=800"
+                  alt="Piña colada caribeña"
+                  id="pinaColada"
+                />
+              </picture>
               <p class="plato-precio">8,20 €</p>
             </div>
             <div class="plato-descripcion">
@@ -241,7 +467,18 @@
 
           <article>
             <div class="card-plato">
-              <img src="/src/public/guarapoMiel.png" alt="Guarapo con miel" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/guarapoMiel_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/guarapoMiel.png?as=webp&width=1200"
+                />
+                <img src="/src/public/guarapoMiel.png?as=webp&width=800" alt="Guarapo con miel" id="guarapoMiel" />
+              </picture>
               <p class="plato-precio">4,80 €</p>
             </div>
             <div class="plato-descripcion">
@@ -255,12 +492,23 @@
           </article>
         </div>
       </section>
+
       <section class="section-postres" id="sectionPostres">
         <h2>Nuestros postres</h2>
         <div class="accordeon">
           <article>
             <div class="card-plato">
-              <img src="/src/public/flanCasero.png" alt="Flan cubano casero" />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/flanCasero_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/flanCasero.png?as=webp&width=1200"
+                />
+              <img src="/src/public/flanCasero.png?as=webp&width=800" alt="Flan cubano casero" id="flanCasero" />
               <p class="plato-precio">5,50 €</p>
             </div>
             <div class="plato-descripcion">
@@ -275,10 +523,18 @@
 
           <article>
             <div class="card-plato">
-              <img
-                src="/src/public/arrozConLeche.png"
-                alt="Arroz con leche criollo"
-              />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/arrozConLeche_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/arrozConLeche.png?as=webp&width=1200"
+                />
+                <img src="/src/public/arrozConLeche.png?as=webp&width=800" alt="Arroz con Leche cubano tradicional" id="arrozConLeche" />
+              </picture>
               <p class="plato-precio">4,90 €</p>
             </div>
             <div class="plato-descripcion">
@@ -293,10 +549,18 @@
 
           <article>
             <div class="card-plato">
-              <img
-                src="/src/public/dulceCoco.png"
-                alt="Dulce de coco tropical"
-              />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/dulceCoco_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/dulceCoco.png?as=webp&width=1200"
+                />
+                <img src="/src/public/dulceCoco.png?as=webp&width=800" alt="Dulce de coco tropical" id="dulceCoco" />
+              </picture>
               <p class="plato-precio">5,20 €</p>
             </div>
             <div class="plato-descripcion">
@@ -311,10 +575,22 @@
 
           <article>
             <div class="card-plato">
-              <img
-                src="/src/public/pastelTresLeches.png"
-                alt="Tres leches tropical"
-              />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/pastelTresLeches_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/pastelTresLeches.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/pastelTresLeches.png?as=webp&width=800"
+                  alt="Pastel tres leches tropical"
+                  id="pastelTresLeches"
+                />
+              </picture>
               <p class="plato-precio">6,20 €</p>
             </div>
             <div class="plato-descripcion">
@@ -329,10 +605,22 @@
 
           <article>
             <div class="card-plato">
-              <img
-                src="/src/public/casquitoGuayaba.png"
-                alt="Casquitos de guayaba con queso"
-              />
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/static/mobil/casquitoGuayaba_mobil.png?as=webp&width=600"
+                />
+
+                <source
+                  media="(min-width: 485px) and (max-width: 768px)"
+                  srcset="/src/public/casquitoGuayaba.png?as=webp&width=1200"
+                />
+                <img
+                  src="/src/public/casquitoGuayaba.png?as=webp&width=800"
+                  alt="Casquitos de guayaba con queso"
+                  id="casquitoGuayaba"
+                />
+              </picture>
               <p class="plato-precio">5,80 €</p>
             </div>
             <div class="plato-descripcion">

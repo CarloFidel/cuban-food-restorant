@@ -14,10 +14,26 @@
 
     <main>
       <section class="section-hero-chefs" id="sectionHero">
-        <img
-          src="/src/public/nuestros_chefs.png"
-          alt="Chefs de La Isla Viva en la cocina"
-        />
+        <picture>
+          <source
+            srcset="
+              /src/public/nuestros_chefs.png?as=avif&width=800  1x,
+              /src/public/nuestros_chefs.png?as=avif&width=1600 2x
+            "
+            type="image/avif"
+          />
+          <source
+            srcset="
+              /src/public/nuestros_chefs.png?as=webp&width=800  1x,
+              /src/public/nuestros_chefs.png?as=webp&width=1600 2x
+            "
+            type="image/webp"
+          />
+          <img
+            src="/src/public/nuestros_chefs.png"
+            alt="Chefs de La Isla Viva en la cocina"
+          />
+        </picture>
         <h1>Nuestros Chefs</h1>
       </section>
 
@@ -40,13 +56,13 @@
           <h2>Manuel Cruz</h2>
           <p class="chef-rol">Chef de Repostería</p>
           <p>
-            Originario de Trinidad, Manuel descubrió su pasión por la
-            repostería en los dulces típicos que vendía su madre en el mercado
-            local. Estudió pastelería en La Habana y amplió sus conocimientos en
-            Buenos Aires. Su talento reside en fusionar los postres
-            tradicionales cubanos con técnicas modernas, creando delicias como
-            su famoso flan de coco caramelizado y los buñuelos de yuca con
-            almíbar de guayaba. Lleva 15 años endulzando paladares.
+            Originario de Trinidad, Manuel descubrió su pasión por la repostería
+            en los dulces típicos que vendía su madre en el mercado local.
+            Estudió pastelería en La Habana y amplió sus conocimientos en Buenos
+            Aires. Su talento reside en fusionar los postres tradicionales
+            cubanos con técnicas modernas, creando delicias como su famoso flan
+            de coco caramelizado y los buñuelos de yuca con almíbar de guayaba.
+            Lleva 15 años endulzando paladares.
           </p>
         </article>
 

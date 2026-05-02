@@ -4,22 +4,22 @@ export function createDetalleContent(data) {
   const titulo = data.titulo;
   const descripcion = data.descripcion;
   const precio = data.precio;
+  const id = data.id;
   const imagen = data.imagen;
+
 
   const platos = ingredientesData.oferta;
 
   const sectionIngredients = document.querySelector(".ingredientes");
 
-  const detalleImg = document.getElementById("detalle-img");
+  const detallePicture = document.getElementById("detalle-picture");
   const detalleTitulo = document.getElementById("detalle-titulo");
   const detallePrecio = document.getElementById("detalle-precio");
   const detalleDescripcion = document.getElementById("detalle-descripcion");
-  const detalleIngredientes = document.getElementById(
-    "detalle-ingredientes",
-  );
+  const detalleIngredientes = document.getElementById("detalle-ingredientes");
 
   if (
-    !detalleImg ||
+    !detallePicture ||
     !detalleTitulo ||
     !detallePrecio ||
     !detalleDescripcion ||
@@ -28,7 +28,23 @@ export function createDetalleContent(data) {
     return;
   }
 
-  detalleImg.src = imagen;
+  detallePicture.innerHTML = "";
+
+  const sourceMobil = document.createElement("source");
+  sourceMobil.media = "(max-width: 600px)";
+  sourceMobil.srcset = `/mobil/${id}_mobil.png`;
+
+  const sourceDesktop = document.createElement("source");
+  sourceDesktop.media = "(min-width: 601px)";
+  sourceDesktop.srcset = imagen;
+
+  const img = document.createElement("img");
+  img.src = imagen;
+  img.alt = titulo;
+
+  detallePicture.appendChild(sourceMobil);
+  detallePicture.appendChild(sourceDesktop);
+  detallePicture.appendChild(img);
   detalleTitulo.textContent = titulo;
   detallePrecio.textContent = precio;
   detalleDescripcion.textContent = descripcion;

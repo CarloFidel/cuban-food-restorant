@@ -1,7 +1,7 @@
 import bandasJSON from "/src/assets/detalle_bandas.json";
 
 export function createDetalleCarteleraContent(dataCartelera) {
-  const bandaImg = document.querySelector("#bandaImagen");
+  const detallePicture = document.querySelector("#detalle-picture");
   const tituloBanda = document.querySelector("#tituloBanda");
   const descriBanda = document.querySelector("#bandaDescripcion");
   const bandaDiscografia = document.querySelector("#bandaDiscografia");
@@ -13,12 +13,12 @@ export function createDetalleCarteleraContent(dataCartelera) {
   const bandaFilter = bandas.find((banda) => banda.id === idBanda);
 
   if (bandaFilter) {
-    const img = bandaFilter.imagen;
+    const imgDesktop = bandaFilter.imagen;
+    const imgMobile = bandaFilter.imagenMobil;
     const titulo = bandaFilter.nombre;
     const descripcion = bandaFilter.resena;
     const discografia = bandaFilter.discografia;
     const video = bandaFilter.video;
-
 
     discografia.forEach((album) => {
       const divAlbum = document.createElement("div");
@@ -33,10 +33,24 @@ export function createDetalleCarteleraContent(dataCartelera) {
       bandaDiscografia.appendChild(divAlbum);
     });
 
-    bandaImg.src = `/${img}`;
+    const sourceMobil = document.createElement("source");
+    sourceMobil.media = "(max-width: 600px)";
+    sourceMobil.srcset = `/mobil/${imgMobile}`;
+
+    const sourceDesktop = document.createElement("source");
+    sourceDesktop.media = "(min-width: 601px)";
+    sourceDesktop.srcset = `/${imgDesktop}`;
+
+    const img = document.createElement("img");
+    img.src = `/${imgDesktop}`;
+    img.alt = titulo;
+
+    detallePicture.appendChild(sourceMobil);
+    detallePicture.appendChild(sourceDesktop);
+    detallePicture.appendChild(img);
+
     tituloBanda.textContent = titulo;
     descriBanda.textContent = descripcion;
-    bandaVideo.setAttribute('src', video);
+    bandaVideo.setAttribute("src", video);
   }
-
 }

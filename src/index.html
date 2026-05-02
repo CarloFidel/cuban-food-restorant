@@ -1,350 +1,389 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Isla Viva | Cocina cubana</title>
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <header>
-      <include class="hidden" src="src/header.html"></include>
-      <include src="src/sideMenu.html"></include>
-    </header>
 
-    <main>
-      <section class="section-hero-index" id="sectionHero">
-        <article class="carousel">
-          <img src="/src/public/ropa_vieja.png" alt="Plato de comida cubana" />
-          <img src="/src/public/ropa_vieja_02.png" alt="Coctel tropical" />
-          <img src="/src/public/quintet.png" alt="Musicos tocando son cubano" />
-        </article>
-        <h1>Un viaje a la gastronomía cubana</h1>
-        <p>Sabor, ritmo y tradicion</p>
-        <p>
-          Descubre nuestra carta llena de recetas tradicionales, cocteles
-          tropicales y musica en vivo para convertir cualquier cena en una
-          celebracion.
-        </p>
-        <div class="button-container">
-          <a class="primary-button" href="/src/pages/menu.html">Ver la carta</a>
-        </div>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Isla Viva | Cocina cubana</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
 
-      <section class="section-categorias carousel">
-        <article>
-          <img src="public/mojito.png" alt="Copa de mojito cubano" />
-          <div class="article-content-container">
-            <h3>Nuestros cocteles</h3>
-            <p>Bebidas tropicales que evocan el frescor del caribe</p>
-            <a
-              class="secondary-button"
-              href="/src/pages/menu.html#section-bebidas"
-              >Carta de bebidas</a
-            >
-          </div>
-        </article>
-        <article>
-          <img
-            src="public/plato-frituritas.png"
-            alt="Plato de frituritas cubanas"
-          />
-          <div class="article-content-container">
-            <h3>Comida tradicional</h3>
-            <p>
-              Bocados crujientes que capturan la esencia de la cocina cubana
-            </p>
-            <a class="secondary-button" href="/src/pages/menu.html"
-              >Visita nuestra carta</a
-            >
-          </div>
-        </article>
-        <article>
-          <img
-            src="public/quintet.png"
-            alt="Quinteto tocando música cubana en vivo"
-          />
-          <div class="article-content-container">
-            <h3>Música tradicional</h3>
-            <p>Música en vivo que llena de ritmo y alegría nuestro local</p>
-            <a class="secondary-button" href="/src/pages/cartelera.html"
-              >Programación musical</a
-            >
-          </div>
-        </article>
-      </section>
+<body>
+  <header>
+    <include class="hidden" src="src/header.html"></include>
+    <include src="src/sideMenu.html"></include>
+  </header>
 
-      <section class="section-sugerencias">
-        <h2>El chef sugiere</h2>
-        <svg width="30" height="30">
-          <use href="./assets/sprite.svg#chef" />
+  <main>
+    <section class="section-hero-index" id="sectionHero">
+      <article class="carousel">
+        <img src="/src/public/ropa_vieja.png?as=webp&width=800" srcset="
+              /src/public/ropa_vieja.png?as=webp&width=400   400w,
+              /src/public/ropa_vieja.png?as=webp&width=800   800w,
+              /src/public/ropa_vieja.png?as=webp&width=1200 1200w
+            " sizes="(max-width: 600px) 100vw, 50vw" alt="Plato de comida cubana" />
+
+        <img src="/src/public/ropa_vieja_02.png?as=webp&width=800" srcset="
+              /src/public/ropa_vieja_02.png?as=webp&width=400   400w,
+              /src/public/ropa_vieja_02.png?as=webp&width=800   800w,
+              /src/public/ropa_vieja_02.png?as=webp&width=1200 1200w
+            " sizes="(max-width: 600px) 100vw, 50vw" alt="Coctel tropical" />
+
+        <img src="/src/public/quintet.png?as=webp&width=800" srcset="
+              /src/public/quintet.png?as=webp&width=400   400w,
+              /src/public/quintet.png?as=webp&width=800   800w,
+              /src/public/quintet.png?as=webp&width=1200 1200w
+            " sizes="(max-width: 600px) 100vw, 50vw" alt="Musicos tocando son cubano" />
+      </article>
+      <h1>Un viaje a la gastronomía cubana</h1>
+      <p>Sabor, ritmo y tradicion</p>
+      <p>
+        Descubre nuestra carta llena de recetas tradicionales, cocteles
+        tropicales y musica en vivo para convertir cualquier cena en una
+        celebracion.
+      </p>
+      <div class="button-container">
+        <a class="primary-button" href="/src/pages/menu.html">Ver la carta</a>
+      </div>
+    </section>
+
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-animado">
+      <path fill="currentColor"
+        d="M10.472 13.299q.144-.144.144-.357v-2.826q0-.213-.144-.357t-.357-.143t-.356.143t-.143.357v2.826q0 .213.143.357q.144.143.357.143t.356-.143m-4.645-.972q-1.035-.517-1.68-1.48Q3.5 9.885 3.5 8.725q0-1.548 1.086-2.636Q5.67 5 7.219 5q.295 0 .603.05t.603.125l.173.039l.096-.155q.548-.909 1.404-1.484T12 3t1.902.575t1.423 1.484l.096.154l.154-.038q.286-.075.572-.125t.595-.05q1.568 0 2.663 1.088T20.5 8.744q0 1.16-.637 2.113q-.636.953-1.69 1.466v4.908H5.827zm8.434.972q.143-.144.143-.357v-2.826q0-.213-.144-.357q-.144-.143-.357-.143t-.356.143t-.143.357v2.826q0 .213.144.357t.357.143t.356-.143M6.827 16.23h10.346v-4.552l.812-.396q.707-.344 1.12-1.018t.414-1.482q0-1.169-.828-1.976T16.704 6q-.256 0-.49.04q-.235.04-.466.116l-.79.228l-.487-.819q-.408-.69-1.047-1.128T12.01 4t-1.415.438t-1.047 1.128l-.487.819l-.815-.23q-.23-.068-.468-.112T7.29 6q-1.16 0-1.975.803T4.5 8.768q0 .803.411 1.473t1.124 1.042l.792.396zm-1 1h1v2.153q0 .27.173.443t.442.173h9.116q.269 0 .442-.173t.173-.443V17.23h1v2.153q0 .667-.475 1.141t-1.14.475H7.442q-.666 0-1.14-.475t-.475-1.14zm6.192-1" />
+    </svg>
+
+    <section class="section-categorias carousel">
+      <article>
+        <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="img-form" clipPathUnits="objectBoundingBox">
+              <path>
+                <animate attributeName="d" dur="6s" repeatCount="indefinite"
+                  values="
+                     M0.88 0.22 L0.96 0.49 L0.96 0.49 L0.94 0.83 C0.94 0.85 0.90 0.89 0.85 0.90 L0.50 0.96 L0.50 0.96 L0.15 0.90 C0.10 0.89 0.06 0.85 0.06 0.83 L0.03 0.49 L0.03 0.49 L0.12 0.24 C0.13 0.20 0.18 0.16 0.21 0.15 L0.51 0.08 L0.51 0.08 L0.80 0.14 C0.83 0.15 0.87 0.18 0.88 0.22 Z;
+                     M0.88 0.22 L0.955 0.55 L0.955 0.495 L0.94 0.83 C0.94 0.85 0.90 0.89 0.855 0.895 L0.50 0.96 L0.53 0.96 L0.155 0.895 C0.105 0.89 0.065 0.85 0.065 0.83 L0.035 0.495 L0.035 0.485 L0.125 0.245 C0.135 0.205 0.18 0.165 0.215 0.155 L0.51 0.085 L0.51 0.085 L0.795 0.145 C0.83 0.15 0.87 0.18 0.88 0.22 Z;
+                     M0.88 0.22 L0.96 0.49 L0.96 0.49 L0.94 0.83 C0.94 0.85 0.90 0.89 0.85 0.90 L0.50 0.96 L0.50 0.96 L0.15 0.90 C0.10 0.89 0.06 0.85 0.06 0.83 L0.03 0.49 L0.03 0.49 L0.12 0.24 C0.13 0.20 0.18 0.16 0.21 0.15 L0.51 0.08 L0.51 0.08 L0.80 0.14 C0.83 0.15 0.87 0.18 0.88 0.22 Z" />
+              </path>
+            </clipPath>
+          </defs>
         </svg>
-        <div class="div-sugerencias carousel">
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/plato-frituritas.png"
-              alt="Plato de frituritas cubanas"
-            />
-            <div class="article-content-container">
-              <h3>Frituritas cubanas</h3>
-              <p class="sugerencia-description">
-                Nuestras frituritas de malanga son el bocado perfecto para
-                compartir y disfrutar del auténtico sabor cubano.
-              </p>
-              <div class="stars-container">
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-              </div>
-              <a href="/src/pages/menu.html" class="primary-button"
-                >Visitar carta</a
-              >
-            </div>
-          </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/yucaConMojo.png"
-              alt="Plato de yuca con mojo criollo"
-            />
-            <div class="article-content-container">
-              <h3>Yuca con mojo criollo</h3>
-              <p class="sugerencia-description">
-                Yuca tierna bañada en mojo de ajo, limón y cebolla. Un clásico
-                cubano lleno de aroma y sabor casero para abrir el apetito.
-              </p>
-              <div class="stars-container">
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="22" height="22">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-              </div>
+        <picture class="picture-categorias">
+          <source srcset="
+                public/mojito.png?as=avif&width=800  1x,
+                public/mojito.png?as=avif&width=1600 2x
+              " type="image/avif" />
 
-              <a href="/src/pages/menu.html" class="primary-button"
-                >Visitar carta</a
-              >
-            </div>
-          </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/tostonesRellenos.png"
-              alt="Plato de tostones con salsa de ajo"
-            />
-            <div class="article-content-container">
-              <h3>Tostones con salsa de ajo</h3>
-              <p class="sugerencia-description">
-                Plátano verde dorado y crujiente, acompañado de una salsa suave
-                de ajo. Ideal para compartir mientras disfrutas la música en
-                vivo.
-              </p>
-              <div class="stars-container">
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-              </div>
+          <source srcset="
+                public/mojito.png?as=webp&width=800  1x,
+                public/mojito.png?as=webp&width=1600 2x
+              " type="image/webp" />
 
-              <a href="/src/pages/menu.html" class="primary-button"
-                >Visitar carta</a
-              >
-            </div>
-          </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/pastelTresLeches.png"
-              alt="Plato de pastel tres leches cubano"
-            />
-            <div class="article-content-container">
-              <h3>Pastel Tres Leches</h3>
-              <p class="sugerencia-description">
-                Pastel esponjoso bañado en tres tipos de leche, creando una
-                textura húmeda y deliciosa. Un postre clásico que siempre
-                encanta.
-              </p>
-              <div class="stars-container">
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-              </div>
-
-              <a href="/src/pages/menu.html" class="primary-button"
-                >Visitar carta</a
-              >
-            </div>
-          </article>
-          <article class="card-sugerencia">
-            <img
-              src="/src/public/lechonAsado.png"
-              alt="Plato de lechón asado cubano"
-            />
-            <div class="article-content-container">
-              <h3>Lechón Asado</h3>
-              <p class="sugerencia-description">
-                Cerdo marinado con ajo, naranja agria y especias. Asado a fuego
-                lento hasta quedar jugoso y dorado. Ideal para compartir en
-                celebraciones familiares.
-              </p>
-              <div class="stars-container">
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-                <div>
-                  <svg width="24" height="24">
-                    <use href="./assets/sprite.svg#star" />
-                  </svg>
-                </div>
-              </div>
-
-              <a href="/src/pages/menu.html" class="primary-button"
-                >Visitar carta</a
-              >
-            </div>
-          </article>
+          <img src="public/mojito.png?width=800" alt="Copa de mojito cubano" />
+        </picture>
+        <div class="article-content-container">
+          <h3>Nuestros cocteles</h3>
+          <p>Bebidas tropicales que evocan el frescor del caribe</p>
+          <a class="secondary-button" href="/src/pages/menu.html#section-bebidas">Carta de bebidas</a>
         </div>
-        <button
-          type="button"
-          class="sugerencias-left-button-slide slide-button"
-          id="sugerenciasLeftButton"
-          aria-label="Ver sugerencia anterior"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="#333333"
-              d="m2.82 12l7.715 7.716q.22.22.218.528t-.224.529t-.529.221t-.529-.221L1.83 13.137q-.242-.243-.354-.54q-.111-.299-.111-.597t.111-.596q.112-.298.354-.54L9.47 3.22q.221-.221.532-.218q.31.003.532.224q.22.221.22.529t-.22.529z"
-            />
-          </svg>
-        </button>
-        <button
-          type="button"
-          class="sugerencias-right-button-slide slide-button"
-          id="sugerenciasRightButton"
-          aria-label="Ver siguiente sugerencia"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="#333333"
-              d="M15.187 12L7.47 4.285q-.221-.221-.218-.532q.003-.31.224-.532Q7.698 3 8.009 3q.31 0 .532.221l7.636 7.643q.242.242.354.54t.111.596t-.111.596t-.354.54L8.535 20.78q-.222.221-.53.218q-.307-.003-.528-.224t-.221-.532t.221-.531z"
-            />
-          </svg>
-        </button>
-      </section>
-    </main>
+      </article>
 
-    <footer id="contacto">
-      <include src="src/footer.html"></include>
-    </footer>
-    <script type="module" src="js/main.js"></script>
-  </body>
+      <article>
+        <picture class="picture-categorias">
+          <source srcset="
+                public/plato-frituritas.png?as=avif&width=800  1x,
+                public/plato-frituritas.png?as=avif&width=1600 2x
+              " type="image/avif" />
+
+          <source srcset="
+                public/plato-frituritas.png?as=webp&width=800  1x,
+                public/plato-frituritas.png?as=webp&width=1600 2x
+              " type="image/webp" />
+
+          <img src="public/plato-frituritas.png?width=800" alt="Plato de frituritas cubanas" />
+        </picture>
+
+        <div class="article-content-container">
+          <h3>Comida tradicional</h3>
+          <p>
+            Bocados crujientes que capturan la esencia de la cocina cubana
+          </p>
+          <a class="secondary-button" href="/src/pages/menu.html">Visita nuestra carta</a>
+        </div>
+      </article>
+
+      <article>
+        <picture class="picture-categorias">
+          <source srcset="
+                public/quintet.png?as=avif&width=800  1x,
+                public/quintet.png?as=avif&width=1600 2x
+              " type="image/avif" />
+
+          <source srcset="
+                public/quintet.png?as=webp&width=800  1x,
+                public/quintet.png?as=webp&width=1600 2x
+              " type="image/webp" />
+
+          <img src="public/quintet.png?width=800" alt="Quinteto cubano tocando musica tradicional" />
+        </picture>
+        <div class="article-content-container">
+          <h3>Música tradicional</h3>
+          <p>Música en vivo que llena de ritmo y alegría nuestro local</p>
+          <a class="secondary-button" href="/src/pages/cartelera.html">Programación musical</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-sugerencias">
+      <h2>El chef sugiere</h2>
+      <svg width="80" height="60" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Sartén (base, solo borde fino) -->
+        <ellipse cx="40" cy="45" rx="22" ry="11" fill="none" stroke="currentColor" stroke-width="1.5" />
+        <!-- Sartén (mango, más largo) -->
+        <rect x="62" y="42" width="30" height="4" rx="2" fill="none" stroke="currentColor" stroke-width="1.5" />
+        <!-- Sartén (borde interior fino) -->
+        <ellipse cx="40" cy="45" rx="18" ry="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+        <!-- Humo 1 -->
+        <path class="humo humo1" d="M30 35 Q28 30, 32 27 Q36 24, 34 20" stroke="#666" stroke-width="0.5" fill="none" />
+        <!-- Humo 2 -->
+        <path class="humo humo2" d="M40 33 Q39 28, 43 25 Q47 22, 45 18" stroke="#666" stroke-width="0.5" fill="none" />
+        <!-- Humo 3 -->
+        <path class="humo humo3" d="M50 36 Q52 32, 49 28 Q46 24, 50 20" stroke="#666" stroke-width="0.5" fill="none" />
+      </svg>
+      <div class="div-sugerencias carousel">
+        <article class="card-sugerencia">
+          <img src="/src/public/plato-frituritas.png" srcset="
+                /src/public/plato-frituritas.png?as=webp&width=800  1x,
+                /src/public/plato-frituritas.png?as=webp&width=1600 2x
+              " alt="Plato de frituritas cubanas" />
+          <div class="article-content-container">
+            <h3>Frituritas cubanas</h3>
+            <p class="sugerencia-description">
+              Nuestras frituritas de malanga son el bocado perfecto para
+              compartir y disfrutar del auténtico sabor cubano.
+            </p>
+            <div class="stars-container">
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+            </div>
+            <a href="/src/pages/menu.html" class="primary-button">Visitar carta</a>
+          </div>
+        </article>
+        <article class="card-sugerencia">
+          <img src="/src/public/yucaConMojo.png" srcset="
+                /src/public/yucaConMojo.png?as=webp&width=800  1x,
+                /src/public/yucaConMojo.png?as=webp&width=1600 2x
+              " alt="Plato de yuca con mojo criollo" />
+          <div class="article-content-container">
+            <h3>Yuca con mojo criollo</h3>
+            <p class="sugerencia-description">
+              Yuca tierna bañada en mojo de ajo, limón y cebolla. Un clásico
+              cubano lleno de aroma y sabor casero para abrir el apetito.
+            </p>
+            <div class="stars-container">
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="22" height="22">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+            </div>
+
+            <a href="/src/pages/menu.html" class="primary-button">Visitar carta</a>
+          </div>
+        </article>
+        <article class="card-sugerencia">
+          <img src="/src/public/tostonesRellenos.png" srcset="
+                /src/public/tostonesRellenos.png?as=webp&width=800  1x,
+                /src/public/tostonesRellenos.png?as=webp&width=1600 2x
+              " alt="Plato de tostones con salsa de ajo" />
+          <div class="article-content-container">
+            <h3>Tostones con salsa de ajo</h3>
+            <p class="sugerencia-description">
+              Plátano verde dorado y crujiente, acompañado de una salsa suave
+              de ajo. Ideal para compartir mientras disfrutas la música en
+              vivo.
+            </p>
+            <div class="stars-container">
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+            </div>
+
+            <a href="/src/pages/menu.html" class="primary-button">Visitar carta</a>
+          </div>
+        </article>
+        <article class="card-sugerencia">
+          <img src="/src/public/pastelTresLeches.png" srcset="
+                /src/public/pastelTresLeches.png?as=webp&width=800  1x,
+                /src/public/pastelTresLeches.png?as=webp&width=1600 2x
+              " alt="Plato de pastel tres leches cubano" />
+          <div class="article-content-container">
+            <h3>Pastel Tres Leches</h3>
+            <p class="sugerencia-description">
+              Pastel esponjoso bañado en tres tipos de leche, creando una
+              textura húmeda y deliciosa. Un postre clásico que siempre
+              encanta.
+            </p>
+            <div class="stars-container">
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+            </div>
+
+            <a href="/src/pages/menu.html" class="primary-button">Visitar carta</a>
+          </div>
+        </article>
+        <article class="card-sugerencia">
+          <img src="/src/public/lechonAsado.png" srcset="
+                /src/public/lechonAsado.png?as=webp&width=800  1x,
+                /src/public/lechonAsado.png?as=webp&width=1600 2x
+              " alt="Plato de lechón asado cubano" />
+          <div class="article-content-container">
+            <h3>Lechón Asado</h3>
+            <p class="sugerencia-description">
+              Cerdo marinado con ajo, naranja agria y especias. Asado a fuego
+              lento hasta quedar jugoso y dorado. Ideal para compartir en
+              celebraciones familiares.
+            </p>
+            <div class="stars-container">
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+              <div>
+                <svg width="24" height="24">
+                  <use href="./assets/sprite.svg#star" />
+                </svg>
+              </div>
+            </div>
+
+            <a href="/src/pages/menu.html" class="primary-button">Visitar carta</a>
+          </div>
+        </article>
+      </div>
+      <button type="button" class="sugerencias-left-button-slide slide-button" id="sugerenciasLeftButton"
+        aria-label="Ver sugerencia anterior">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#333333"
+            d="m2.82 12l7.715 7.716q.22.22.218.528t-.224.529t-.529.221t-.529-.221L1.83 13.137q-.242-.243-.354-.54q-.111-.299-.111-.597t.111-.596q.112-.298.354-.54L9.47 3.22q.221-.221.532-.218q.31.003.532.224q.22.221.22.529t-.22.529z" />
+        </svg>
+      </button>
+      <button type="button" class="sugerencias-right-button-slide slide-button" id="sugerenciasRightButton"
+        aria-label="Ver siguiente sugerencia">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#333333"
+            d="M15.187 12L7.47 4.285q-.221-.221-.218-.532q.003-.31.224-.532Q7.698 3 8.009 3q.31 0 .532.221l7.636 7.643q.242.242.354.54t.111.596t-.111.596t-.354.54L8.535 20.78q-.222.221-.53.218q-.307-.003-.528-.224t-.221-.532t.221-.531z" />
+        </svg>
+      </button>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <include src="src/footer.html"></include>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+
 </html>

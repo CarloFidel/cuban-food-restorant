@@ -5,6 +5,7 @@ main {
   align-items: center;
   width: 100%;
   height: fit-content;
+  
 }
 
 @media (min-width: 768px) {

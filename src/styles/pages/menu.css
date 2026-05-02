@@ -30,13 +30,19 @@
     align-items: center;
     overflow-x: auto;
 
-    & img {
-      min-width: 100%;
-      height: auto;
-      scroll-snap-align: start;
-      object-fit: cover;
-      filter: contrast(60%) brightness(85%);
+    & picture {
+      width: 100%;
+      display: block;
+      height: 30dvh;
       mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+
+      & img {
+        min-width: 100%;
+        height: auto;
+        scroll-snap-align: start;
+        object-fit: cover;
+        filter: contrast(60%) brightness(85%);
+      }
     }
   }
 
@@ -230,26 +236,20 @@ Media Queries
       margin-top: -10px;
     }
   }
-}
 
-@media (min-width: 1025px) {
   .section-hero-menu {
-    & h1 {
-      top: 50%;
-
-      & + * {
-        top: 70%;
-        font-size: 32px;
-      }
-    }
-
     & article {
-      & img {
+      & picture {
         height: 50dvh;
+        & img {
+          height: 50dvh;
+        }
       }
     }
   }
+}
 
+@media (min-width: 1025px) {
   .section-platos,
   .section-bebidas,
   .section-postres {
