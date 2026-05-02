@@ -6,6 +6,10 @@
   flex-direction: column;
   align-items: flex-start;
 
+  & picture {
+    width: 100%;
+  }
+
   & img {
     width: 100%;
     filter: contrast(50%) brightness(85%);

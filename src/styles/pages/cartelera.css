@@ -7,6 +7,10 @@
   position: relative;
   margin-bottom: var(--margin-base);
 
+  & picture {
+    width: 100%;
+  }
+
   & h1 {
     padding: 0px var(--padding-base);
     position: absolute;
