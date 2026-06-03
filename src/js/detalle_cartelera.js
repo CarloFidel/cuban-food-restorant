@@ -44,6 +44,7 @@ export function createDetalleCarteleraContent(dataCartelera) {
     const img = document.createElement("img");
     img.src = `/${imgDesktop}`;
     img.alt = titulo;
+    img.loading = "lazy";
 
     detallePicture.appendChild(sourceMobil);
     detallePicture.appendChild(sourceDesktop);
