@@ -69,7 +69,3 @@ export function createDetalleCarteleraContent(dataCartelera) {
   }
 }
 
-{/* <source
-  srcset="/nuestros_chefs.49413da5.avif 1x,/nuestros_chefs.51686d85.avif 2x"
-  type="image/avif"
-></source>; */}

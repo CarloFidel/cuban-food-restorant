@@ -70,16 +70,10 @@
     <section class="section-categorias carousel">
       <article>
         <picture class="picture-categorias">
-          <source srcset="
-                public/mojito.png?as=avif&width=800  1x,
-                public/mojito.png?as=avif&width=1600 2x
-              " type="image/avif" />
-
-          <source srcset="
-                public/mojito.png?as=webp&width=800  1x,
-                public/mojito.png?as=webp&width=1600 2x
-              " type="image/webp" />
-
+          <source media="(max-width: 600px)" srcset="public/mojito.png?as=avif&width=400" type="image/avif" />
+          <source media="(min-width: 601px)" srcset="public/mojito.png?as=avif&width=800" type="image/avif" />
+          <source media="(max-width: 600px)" srcset="public/mojito.png?as=webp&width=400" type="image/webp" />
+          <source media="(min-width: 601px)" srcset="public/mojito.png?as=webp&width=800" type="image/webp" />
           <img src="public/mojito.png?width=800" alt="Copa de mojito cubano" />
         </picture>
         <div class="article-content-container">
@@ -91,15 +85,29 @@
 
       <article>
         <picture class="picture-categorias">
-          <source srcset="
-                public/plato-frituritas.png?as=avif&width=800  1x,
-                public/plato-frituritas.png?as=avif&width=1600 2x
-              " type="image/avif" />
+          <source
+            media="(max-width: 600px)"
+            srcset="public/plato-frituritas.png?as=avif&width=400"
+            type="image/avif"
+          />
 
-          <source srcset="
-                public/plato-frituritas.png?as=webp&width=800  1x,
-                public/plato-frituritas.png?as=webp&width=1600 2x
-              " type="image/webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="public/plato-frituritas.png?as=avif&width=800"
+            type="image/avif"
+          />
+
+          <source
+            media="(max-width: 600px)"
+            srcset="public/plato-frituritas.png?as=webp&width=400"
+            type="image/webp"
+          />
+
+          <source
+            media="(min-width: 601px)"
+            srcset="public/plato-frituritas.png?as=webp&width=800"
+            type="image/webp"
+          />
 
           <img src="public/plato-frituritas.png?width=800" alt="Plato de frituritas cubanas" />
         </picture>
@@ -115,16 +123,10 @@
 
       <article>
         <picture class="picture-categorias">
-          <source srcset="
-                public/quintet.png?as=avif&width=800  1x,
-                public/quintet.png?as=avif&width=1600 2x
-              " type="image/avif" />
-
-          <source srcset="
-                public/quintet.png?as=webp&width=800  1x,
-                public/quintet.png?as=webp&width=1600 2x
-              " type="image/webp" />
-
+          <source media="(max-width: 600px)" srcset="public/quintet.png?as=avif&width=400" type="image/avif" />
+          <source media="(min-width: 601px)" srcset="public/quintet.png?as=avif&width=800" type="image/avif" />
+          <source media="(max-width: 600px)" srcset="public/quintet.png?as=webp&width=400" type="image/webp" />
+          <source media="(min-width: 601px)" srcset="public/quintet.png?as=webp&width=800" type="image/webp" />
           <img src="public/quintet.png?width=800" alt="Quinteto cubano tocando musica tradicional" />
         </picture>
         <div class="article-content-container">
@@ -150,10 +152,11 @@
       </svg>
       <div class="div-sugerencias carousel">
         <article class="card-sugerencia">
-          <img src="/src/public/plato-frituritas.png" srcset="
-                /src/public/plato-frituritas.png?as=webp&width=800  1x,
-                /src/public/plato-frituritas.png?as=webp&width=1600 2x
-              " alt="Plato de frituritas cubanas" />
+          <picture>
+            <source media="(max-width: 600px)" srcset="/src/public/plato-frituritas.png?as=webp&width=400" type="image/webp" />
+            <source media="(min-width: 601px)" srcset="/src/public/plato-frituritas.png?as=webp&width=800" type="image/webp" />
+            <img src="/src/public/plato-frituritas.png?as=webp&width=800" alt="Plato de frituritas cubanas" />
+          </picture>
           <div class="article-content-container">
             <h3>Frituritas cubanas</h3>
             <p class="sugerencia-description">
@@ -191,10 +194,11 @@
           </div>
         </article>
         <article class="card-sugerencia">
-          <img src="/src/public/yucaConMojo.png" srcset="
-                /src/public/yucaConMojo.png?as=webp&width=800  1x,
-                /src/public/yucaConMojo.png?as=webp&width=1600 2x
-              " alt="Plato de yuca con mojo criollo" loading="lazy" />
+          <picture>
+            <source media="(max-width: 600px)" srcset="/src/public/yucaConMojo.png?as=webp&width=400" type="image/webp" />
+            <source media="(min-width: 601px)" srcset="/src/public/yucaConMojo.png?as=webp&width=800" type="image/webp" />
+            <img src="/src/public/yucaConMojo.png?as=webp&width=800" alt="Plato de yuca con mojo criollo" loading="lazy" />
+          </picture>
           <div class="article-content-container">
             <h3>Yuca con mojo criollo</h3>
             <p class="sugerencia-description">
@@ -233,10 +237,11 @@
           </div>
         </article>
         <article class="card-sugerencia">
-          <img src="/src/public/tostonesRellenos.png" srcset="
-                /src/public/tostonesRellenos.png?as=webp&width=800  1x,
-                /src/public/tostonesRellenos.png?as=webp&width=1600 2x
-              " alt="Plato de tostones con salsa de ajo" loading="lazy" />
+          <picture>
+            <source media="(max-width: 600px)" srcset="/src/public/tostonesRellenos.png?as=webp&width=400" type="image/webp" />
+            <source media="(min-width: 601px)" srcset="/src/public/tostonesRellenos.png?as=webp&width=800" type="image/webp" />
+            <img src="/src/public/tostonesRellenos.png?as=webp&width=800" alt="Plato de tostones con salsa de ajo" loading="lazy" />
+          </picture>
           <div class="article-content-container">
             <h3>Tostones con salsa de ajo</h3>
             <p class="sugerencia-description">
@@ -276,10 +281,11 @@
           </div>
         </article>
         <article class="card-sugerencia">
-          <img src="/src/public/pastelTresLeches.png" srcset="
-                /src/public/pastelTresLeches.png?as=webp&width=800  1x,
-                /src/public/pastelTresLeches.png?as=webp&width=1600 2x
-              " alt="Plato de pastel tres leches cubano" loading="lazy" />
+          <picture>
+            <source media="(max-width: 600px)" srcset="/src/public/pastelTresLeches.png?as=webp&width=400" type="image/webp" />
+            <source media="(min-width: 601px)" srcset="/src/public/pastelTresLeches.png?as=webp&width=800" type="image/webp" />
+            <img src="/src/public/pastelTresLeches.png?as=webp&width=800" alt="Plato de pastel tres leches cubano" loading="lazy" />
+          </picture>
           <div class="article-content-container">
             <h3>Pastel Tres Leches</h3>
             <p class="sugerencia-description">
@@ -319,10 +325,11 @@
           </div>
         </article>
         <article class="card-sugerencia">
-          <img src="/src/public/lechonAsado.png" srcset="
-                /src/public/lechonAsado.png?as=webp&width=800  1x,
-                /src/public/lechonAsado.png?as=webp&width=1600 2x
-              " alt="Plato de lechón asado cubano" loading="lazy" />
+          <picture>
+            <source media="(max-width: 600px)" srcset="/src/public/lechonAsado.png?as=webp&width=400" type="image/webp" />
+            <source media="(min-width: 601px)" srcset="/src/public/lechonAsado.png?as=webp&width=800" type="image/webp" />
+            <img src="/src/public/lechonAsado.png?as=webp&width=800" alt="Plato de lechón asado cubano" loading="lazy" />
+          </picture>
           <div class="article-content-container">
             <h3>Lechón Asado</h3>
             <p class="sugerencia-description">
@@ -382,8 +389,8 @@
   <footer id="contacto">
     <include src="src/footer.html"></include>
   </footer>
-  <!-- <script type="module" src="js/main.js"></script> -->
-  <script type="module" src="js/refactMain.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <!-- <script type="module" src="js/refactMain.js"></script> -->
 </body>
 
 </html>
