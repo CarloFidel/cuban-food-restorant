@@ -1,4 +1,4 @@
-// 1) Solo lo mínimo común al arrancar
+
 async function initCommonUI() {
   const hamburgerIcon = document.querySelector("#openMenuIcon");
   const closeMenuIcon = document.querySelector("#closeMenuIcon");
@@ -10,7 +10,6 @@ async function initCommonUI() {
   }
 }
 
-// 2) Home (index)
 async function initIndex() {
   const sectionHero = document.querySelector("#sectionHero");
   const buttonRight = document.querySelector("#sugerenciasRightButton");
@@ -82,7 +81,6 @@ async function initDetalleCarteleraPage() {
 
 
 
-// Router simple por URL + DOM
 (async function bootstrap() {
   await initCommonUI();
 
